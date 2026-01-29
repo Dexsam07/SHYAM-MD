@@ -240,7 +240,7 @@ If you like this project, please give it a [⭐️ star on GitHub](https://githu
 
 ## Credits
 
-| [![Dex Shyam Chaudhari](https://github.com/dexsam07 .png?size=100)](https://github.com/dexsam07 ) | [![WhiskeySockets](https://github.com/WhiskeySockets.png?size=100)](https://github.com/WhiskeySockets) |
+| [![Dex Shyam Chaudhari](https://github.com/dexsam07.png?size=100)](https://github.com/dexsam07 ) | [![WhiskeySockets](https://github.com/WhiskeySockets.png?size=100)](https://github.com/WhiskeySockets) |
 | --- | --- 
 | [Dex Shyam Chaudhari](https://github.com/dexsam07 ) |[WhiskeySockets](https://github.com/WhiskeySockets) |
 
