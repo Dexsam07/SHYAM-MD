@@ -145,7 +145,7 @@ Easily connect to your WhatsApp account by pair code.
 ### Join Us
 
 <div align="center">
-  <a href="https://t.me/GlobalTechBots">
+  <a href="https://t.me/dexsam007">
     <img src="https://img.shields.io/badge/Join%20Telegram-0078E7?style=for-the-badge&logo=telegram&logoColor=white" alt="Join Telegram"/>
   </a>
   <a href="https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07">
@@ -240,9 +240,9 @@ If you like this project, please give it a [⭐️ star on GitHub](https://githu
 
 ## Credits
 
-| [![Qasim Ali](https://github.com/GlobalTechInfo.png?size=100)](https://github.com/GlobalTechInfo) | [![WhiskeySockets](https://github.com/WhiskeySockets.png?size=100)](https://github.com/WhiskeySockets) |
+| [![Dex Shyam Chaudhari](https://github.com/dexsam07 .png?size=100)](https://github.com/dexsam07 ) | [![WhiskeySockets](https://github.com/WhiskeySockets.png?size=100)](https://github.com/WhiskeySockets) |
 | --- | --- 
-| [Qasim Ali](https://github.com/GlobalTechInfo) |[WhiskeySockets](https://github.com/WhiskeySockets) |
+| [Dex Shyam Chaudhari](https://github.com/dexsam07 ) |[WhiskeySockets](https://github.com/WhiskeySockets) |
 
 ---
 
@@ -260,7 +260,7 @@ If you like this project, please give it a [⭐️ star on GitHub](https://githu
 
 ## Copyright Notice
 
-Copyright (c) 2026 GlobalTechInfo. All rights reserved.
+Copyright (c) 2026 dexsam07 . All rights reserved.
 
 This project contains code from various open source projects:
 - Baileys (MIT License)
