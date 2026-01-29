@@ -28,10 +28,10 @@
     "whatsapp-api",
     "baileys-bot",
     "whatsApp",
-    "mega-bot",
-    "mega-md",
+    "shyam-bot",
+    "shyam-bot",
     "multi-device",
-    "mega-ai"
+    "Dex-ai"
   ],
   "homepage": "https://github.com/Dexsam07/SHYAM-MD",
   "repository": {
@@ -95,7 +95,7 @@
   },
   "contributors": [
     {
-      "name": "Qasim Ali",
+      "name": "Dex Shyam Chaudhari",
       "role": "Lead Developer"
     },
     {
