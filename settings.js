@@ -5,7 +5,7 @@ const settings = {
   timeZone: 'Asia/Kolkata,
   botName: "SHYAM-MD", // your bot name
   botOwner: 'Dex Shyam Chaudhari', // set your name
-  ownerNumber: '923051391007', // Set your number here without + symbol, just add country code & number without any space
+  ownerNumber: '917384287404', // Set your number here without + symbol, just add country code & number without any space
   giphyApiKey: 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq',
   commandMode: "public",
   maxStoreMessages: 20,
