@@ -1,7 +1,7 @@
 const settings = {
   prefixes: ['.'], // Multiple prefix support you can add one or more
   packname: 'SHYAM-MD',
-  author: '‎dexsam07',
+  author: 'dexsam07',
   timeZone: 'Asia/Kolkata'
   botName: "SHYAM-MD", // your bot name
   botOwner: 'Dex Shyam Chaudhari', // set your name
