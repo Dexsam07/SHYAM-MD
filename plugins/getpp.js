@@ -26,7 +26,7 @@ module.exports = {
         target = input + '@s.whatsapp.net';
       } else {
         return await sock.sendMessage(chatId, { 
-          text: '❌ Invalid number. Use format: 923051234567 or +923051234567' 
+          text: '❌ Invalid number. Use format: 913051234567 or +913051234567' 
         }, { quoted: message });
       }
     } else {

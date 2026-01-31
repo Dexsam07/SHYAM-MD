@@ -12,7 +12,7 @@ module.exports = {
     const query = args?.join(' ').trim();
 
     if (!query) {
-      return await sock.sendMessage(chatId, { text: 'Please provide a search query.\nExample: .gimage Pakistan' }, { quoted: message });
+      return await sock.sendMessage(chatId, { text: 'Please provide a search query.\nExample: .gimage india' }, { quoted: message });
     }
 
     try {
