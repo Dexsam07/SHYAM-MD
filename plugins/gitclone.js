@@ -10,7 +10,7 @@ module.exports = {
 
     if (!args || args.length === 0) {
       return sock.sendMessage(chatId, {
-        text: '*🌟 Please provide a GitHub URL or username and repository name.*\n\n*Example usage:*\n\n.clone https://github.com/GlobalTechInfo/MEGA-MD\n\n.clone GlobalTechInfo MEGA-MD'
+        text: '*🌟 Please provide a GitHub URL or username and repository name.*\n\n*Example usage:*\n\n.clone https://github.com/Dexsam07/SHYAM-MD\n\n.clone Dexsam07 SHYAM-MD'
       });
     }
 
@@ -31,7 +31,7 @@ module.exports = {
       url = `https://github.com/${username}/${repo}/archive/refs/heads/main.zip`;
     } else {
       return sock.sendMessage(chatId, {
-        text: '*Missing repository info.*\n\n*Example usage:*\n\n.clone https://github.com/GlobalTechInfo/MEGA-MD\n\n.clone GlobalTechInfo MEGA-MD'
+        text: '*Missing repository info.*\n\n*Example usage:*\n\n.clone https://github.com/Dexsam07/SHYAM-MD\n\n.clone Dexsam07 SHYAM-MD'
       });
     }
 
