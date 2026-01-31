@@ -2,262 +2,139 @@
 
 <div align="center"> 
   <a href="https://youtube.com/@dex_shyam_07?si=qeH290TYUYLGJuzr"> 
-    <img src="https://github.com/Dexsam07/SHYAM-MD/blob/main/assets/bot_image.jpg" alt="DEX AI" height="300"> 
+    <img src="https://github.com/Dexsam07/SHYAM-MD/blob/main/assets/bot_image.jpg" alt="DEX AI" height="320"> 
   </a> 
 </div>
 
 <div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=Dexsam07&label=Profile+Views&color=success&style=flat-square" />
-<img src="https://img.shields.io/github/stars/Dexsam07/SHYAM-MD?color=blue&style=yellow-square" />
-<img src="https://img.shields.io/github/forks/Dexsam07/SHYAM-MD?color=ff00ff&style=flat-square" />
-<img src="https://img.shields.io/github/repo-size/Dexsam07/SHYAM-MD?color=success&style=flat-square" />
-<img src="https://img.shields.io/github/last-commit/Dexsam07/SHYAM-MD?color=yellow&style=flat-square" />
-<a href="https://discord.gg/fZ7MVJM9sq">
-  <img title="Join our group" src="https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o" alt="WhatsApp">
-</a>
+  <img src="https://komarev.com/ghpvc/?username=Dexsam07&label=Profile+Views&color=success&style=flat-square" />
+  <img src="https://img.shields.io/github/stars/Dexsam07/SHYAM-MD?color=blue&style=flat-square" />
+  <img src="https://img.shields.io/github/forks/Dexsam07/SHYAM-MD?color=ff00ff&style=flat-square" />
+  <img src="https://img.shields.io/github/repo-size/Dexsam07/SHYAM-MD?color=success&style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/Dexsam07/SHYAM-MD?color=yellow&style=flat-square" />
+  <a href="https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o">
+    <img src="https://img.shields.io/badge/Join%20Channel-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp Channel"/>
+  </a>
 </div>
 
----
- <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=24&duration=4000&pause=1000&color=FF0000&center=true&vCenter=true&width=500&lines=SHYAM+PRO+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+BAILEYS;FAST++SECURE++RELIABLE" alt="Typing SVG"/>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=28&duration=4500&pause=800&color=FF0000&center=true&vCenter=true&width=550&lines=SHYAM+PRO+WHATSAPP+BOT;MULTI-DEVICE+BAILEYS;FAST+%7C+SECURE+%7C+POWERFUL;2026+EDITION" alt="Typing SVG"/>
 </p>
 
 ---
 
-## Steps to Deploy
+## 🚀 Quick Deployment Steps
 
-### Step 1: Fork the Repository
-
-Click the button below to fork the SHYAM Md repository to your GitHub account:
+### 1. Fork This Repository
 
 <div align="center">
   <a href="https://github.com/Dexsam07/SHYAM-MD/fork">
-    <img src="https://img.shields.io/badge/Fork-Repo-orange?style=for-the-badge" alt="Fork the repository"/>
+    <img src="https://img.shields.io/badge/FORK-REPOSITORY-orange?style=for-the-badge&logo=github&logoColor=white" alt="Fork Repo"/>
   </a>
 </div>
 
----
+### 2. Get Session ID / Pair Code (Important!)
 
-### Step 2: Get Pair Code
-
-Easily connect to your WhatsApp account by pair code.
-
-<div align="center">
+<div align="center" style="margin: 20px 0;">
   <a href="https://shyam-md-bot-piar-ex.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/SESSION-ID-ff4d4d?style=for-the-badge" alt="Generate Pair Code"/>
+    <img src="https://img.shields.io/badge/PAIR+CODE+-+OFFICIAL-FF0000?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Official Pair"/>
   </a>
-  &nbsp;&nbsp;
+  &nbsp; &nbsp; &nbsp;
   <a href="https://shyam-md-piar-10000.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/PAIR-CODE-2-ff4d4d?style=for-the-badge" alt="Alternative Pair Code"/>
+    <img src="https://img.shields.io/badge/PAIR+CODE+-+ALTERNATE-DC143C?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Alternative Pair"/>
   </a>
 </div>
 
----
+**How to use:**
+- Open any link above
+- Click "Generate Pair Code" or scan QR
+- Copy the **SESSION_ID** (pair code)
+- Paste it in `.env` or hosting variables
 
+**Troubleshooting Tip:** If pair code/QR not generating → try incognito mode, clear cache, or use mobile hotspot. Render sometimes sleeps — wait 10–15 sec.
 
-### Step 3: Set Environment Variables.
+### 3. Set Environment Variables (in .env or hosting panel)
 
+**Required:**
+- `SESSION_ID` = your pair code from above
 
-**Note:** Set these environment variables in .env file 
+**Highly Recommended (for stability):**
+- `MONGO_URL` = mongodb+srv://...
+- `POSTGRES_URL` = postgres://...
+- `MYSQL_URL` = mysql://...
 
-| Variable | Description 
-|---|---| 
-| REMOVEBG_KEY | API key for www.remove.bg |
-| SESSION_ID | Session id you got via pairing |
+**Optional (for remove.bg command):**
+- `REMOVEBG_KEY` = your api key from remove.bg
 
+### 4. Deploy on Free/Paid Platforms (Choose One)
 
-**Use One Of Following ( Optional But Highly Recommended )** 
-
-| Variable | Description 
-|---|---| 
-| MONGO_URL | mongo db connection uri |
-| POSTGRES_URL | postgres:// postgres connection url |
-| MYSQL_URL | mysql://mysql connection url |
-
-----
-
-### Step 4: Deploy Now
-
-**Option A: Deploy In Heroku**
-1. [Sign Up on Heroku](https://signup.heroku.com/) if you haven’t already.
-2. Click the button below to deploy directly In Heroku:
-   <br>
-   <a href='https://heroku.com/deploy?template=https://github.com/Dexsam07/SHYAM-MD/Bypass' target="_blank">
-      <img alt='Deploy In Heroku' src='https://img.shields.io/badge/-DEPLOY%20NOW-purple?style=for-the-badge&logo=heroku&logoColor=white'/>
-   </a>
-
-**Option B: Deploy In Koyeb**
-1. [Sign Up on Koyeb](https://app.koyeb.com/auth/signup). if you haven’t already.
-2. Click the button below to deploy using Koyeb:
-   <br>
-   <a href='https://app.koyeb.com' target="_blank">
-      <img alt='Deploy In Koyeb' src='https://img.shields.io/badge/-DEPLOY-red?style=for-the-badge&logo=koyeb&logoColor=white'/>
-   </a>
-
-**Option C: Deploy In Railway**
-1. [Sign Up on Railway](https://railway.app/login) if you haven’t already.
-2. Click the button below to deploy using Railway:
-   <br>
-   <a href='https://railway.app/new' target="_blank">
-      <img alt='Deploy In Railway' src='https://img.shields.io/badge/-DEPLOY-purple?style=for-the-badge&logo=railway&logoColor=white'/>
-   </a>
-
-**Option D: Deploy In Render**
-1. [Sign Up on Render](https://dashboard.render.com/register) if you haven’t already.
-2. Click the button below to deploy using Render:
-   <br>
-   <a href='https://dashboard.render.com' target="_blank">
-      <img alt='Deploy In Render' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/>
-   </a>
-   
-**Option E: Deploy In Replit**
-1. [Sign Up on Replit](https://repl.it) if you haven’t already.
-2. Click the button below to deploy using Replit:
-   <br>
-   <a href='https://repl.it/github/Dexsam07/SHYAM-MD' target="_blank">
-      <img alt='Deploy In Replit' src='https://img.shields.io/badge/-DEPLOY-orange?style=for-the-badge&logo=replit&logoColor=white'/>
-   </a>
-
-**Option F: Deploy In Sevalla**
-1. [Sign Up on Sevalla](https://sevalla.com/signup/) if you haven’t already.
-2. Click the button below to deploy using Sevalla:
-   <br>
-   <a href='https://sevalla.com' target="_blank">
-      <img alt='Deploy In Sevalla' src='https://img.shields.io/badge/-DEPLOY%20NOW-blue?style=for-the-badge&logo=sevalla&logoColor=white'/>
-   </a>
-   
-**Option G: Deploy In Fly.io**
-1. [Sign Up on Fly.io](https://fly.io/app/sign-up) if you haven’t already.
-2. Click the button below to deploy using Fly.io:
-   <br>
-   <a href='https://fly.io' target="_blank">
-      <img alt='Deploy In Sevalla' src='https://img.shields.io/badge/-DEPLOY%20NOW-magenta?style=for-the-badge&logo=flyio&logoColor=white'/>
-   </a>
-
-**Option H: Deploy In Panel**
-1. First You Have to Sign up on discord using web or app then click below.
-2. [Sign Up On Panel](https://optiklink.com/auth) if you don’t have Already.
-3. Click the button below to deploy using Panel:
-   <br>
-   <a href='https://control.optiklink.com/' target="_blank">
-      <img alt='Deploy In Panel' src='https://img.shields.io/badge/-DEPLOY-green?style=for-the-badge&logo=Cloudflare&logoColor=white'/>
-   </a>
-
----
-
-### Join Us
-
+**Heroku (Recommended for beginners)**
 <div align="center">
-  <a href="https://t.me/dexsam007">
-    <img src="https://img.shields.io/badge/Join%20Telegram-0078E7?style=for-the-badge&logo=telegram&logoColor=white" alt="Join Telegram"/>
-  </a>
-  <a href="https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07">
-    <img src="https://img.shields.io/badge/Join%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Join WhatsApp"/>
+  <a href="https://heroku.com/deploy?template=https://github.com/Dexsam07/SHYAM-MD/Bypass">
+    <img src="https://img.shields.io/badge/DEPLOY%20TO-HEROKU-9E7CC1?style=for-the-badge&logo=heroku&logoColor=white" alt="Deploy Heroku"/>
   </a>
 </div>
 
----
+**Other Platforms (click to go to dashboard & create new app/service):**
 
-## Features
-
-- **Tag all group members** with the `.tagall` command
-- **Automated Tasks** with the `.autoreact, .autostatus, .autoread` commands
-- **Admin restricted usage** (Only group admins can use certain commands)
-- **Owner restricted usage** (Only owner/sudo can use certain commands)
-- **Games** like Tic-Tac-Toe for interactive group engagement
-- **Social Media** downloaders for popular social media webistes and apps
-- **Text Makers** with `.ephoto`
-- **Text-to-Speech** with `.tts`
-- **Sticker creation** with `.sticker`
-- **Logo creations** with `.ephoto`
-- **Anti-link detection** for group safety
-- **Warn and manage group members** with admin control
-- **And much more .....**
+| Platform   | Button                                                                 | Note                     |
+|------------|------------------------------------------------------------------------|--------------------------|
+| Koyeb      | <a href="https://app.koyeb.com"><img src="https://img.shields.io/badge/DEPLOY-KOYEB-red?style=for-the-badge&logo=koyeb"/></a> | Fast & reliable         |
+| Railway    | <a href="https://railway.app/new"><img src="https://img.shields.io/badge/DEPLOY-RAILWAY-purple?style=for-the-badge&logo=railway"/></a> | Good free tier          |
+| Render     | <a href="https://dashboard.render.com"><img src="https://img.shields.io/badge/DEPLOY-RENDER-black?style=for-the-badge&logo=render"/></a> | Easy Node.js setup      |
+| Replit     | <a href="https://replit.com/github/Dexsam07/SHYAM-MD"><img src="https://img.shields.io/badge/DEPLOY-REPLIT-orange?style=for-the-badge&logo=replit"/></a> | Good for testing        |
+| Sevalla    | <a href="https://sevalla.com"><img src="https://img.shields.io/badge/DEPLOY-SEVALLA-blue?style=for-the-badge"/></a> | Modern alternative      |
+| Fly.io     | <a href="https://fly.io"><img src="https://img.shields.io/badge/DEPLOY-FLY.IO-magenta?style=for-the-badge&logo=fly"/></a> | Global edge             |
 
 ---
 
-## About
+## 🔥 Features List
 
-The DEX AI WhatsApp Bot assists group admins by providing them with tools to efficiently manage large WhatsApp groups. The bot uses the Baileys library to interact with the WhatsApp Web API and supports multi-device features.
-
-It is lightweight and can be easily customized to add more commands as per your requirements. The bot runs in a Node.js environment and provides QR code-based authentication to link your WhatsApp account.
+- `.tagall` – Tag everyone in group
+- Auto-react, auto-status view, auto-read
+- Admin-only & owner-only commands
+- Games (Tic-Tac-Toe & more coming)
+- Instagram / Facebook / TikTok / Twitter downloader
+- `.ephoto`, `.logo` – text to image/logo
+- `.tts` – text to speech
+- `.sticker` – image/video → sticker
+- Anti-link, anti-delete, warn system
+- Group management (kick, mute, promote…)
+- And 100+ more commands!
 
 ---
 
-## Self Hosting Guide
+## Termux / VPS / Ubuntu Self-Hosting (Advanced)
 
-### Deploye in Termux/Ubuntu/Vps/Rdp
-pkg update && pkg upgrade -y
-
-pkg install proot-distro
-
+```bash
+pkg update -y && pkg upgrade -y
+pkg install proot-distro -y
 proot-distro install ubuntu
-
 proot-distro login ubuntu
 
+# Inside Ubuntu
 apt update && apt upgrade -y
+apt install -y git ffmpeg webp curl imagemagick
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+apt install -y nodejs
 
-apt install -y webp git ffmpeg curl imagemagick
-
-apt -y remove nodejs curl -fsSl https://deb.nodesource.com/setup_20.x | bash - && apt -y install nodejs
-
-git clone https://github.com//SHYAM-MD cd SHYAM-MD
-
+git clone https://github.com/YOUR_USERNAME/SHYAM-MD
+cd SHYAM-MD
 npm install
-
 npm start
----
+📢 Join Community
+�
+￼   ￼ 
 
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/Dexsam07/SHYAM-MD/blob/main/LICENSE) file for details.
-
----
-
-## Contributions
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Dexsam07/SHYAM-MD/issues).
-
----
-
-## 🌟 Show your support
-
-If you like this project, please give it a [⭐️ star on GitHub](https://github.com/Dexsam07/SHYAM-MD)!
-
-
-## Credits
-
-| [![Dex Shyam Chaudhari](https://github.com/dexsam07.png?size=100)](https://github.com/dexsam07 ) | [![WhiskeySockets](https://github.com/WhiskeySockets.png?size=100)](https://github.com/WhiskeySockets) |
-| --- | --- 
-| [Dex Shyam Chaudhari](https://github.com/dexsam07 ) |[WhiskeySockets](https://github.com/WhiskeySockets) |
-
----
-
-## Important Warning
-
-**Note:** This bot is created for educational purposes only. This is NOT an official WhatsApp bot. Using this bot may lead to your WhatsApp account being banned. Use it at your own risk. The developers will not be responsible for any consequences or account bans that may occur while using this bot.
-
-## Legal Notice
-
-- This project is not affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries.
-- This is an independent and unofficial software. Use at your own risk.
-- Do not spam people with this bot.
-- Do not use this bot to send bulk messages or for illegal purposes.
-- The developers assume no liability and are not responsible for any misuse or damage caused by this program.
-
-## Copyright Notice
-
-Copyright (c) 2026 dexsam07 . All rights reserved.
-
-This project contains code from various open source projects:
-- Baileys (MIT License)
-- Other libraries as listed in package.json
-
-<h2> IMPORTANT NOTICE </h2>
-
-- Not For Sale
-- If A plugin's code is obfuscated , You don't have permission to edit it in any form 
-- Don't Forget to Give Credits If you are using or Reuploading My Plugins/files
-- Have A Good Day
+⚠️ Important Warnings
+Educational purpose only — NOT official WhatsApp product
+Risk of account ban — Use responsibly, no spam/bulk
+Developers not responsible for bans or misuse
+No selling/reselling allowed
+Legal & Copyright
+Copyright © 2026 Dexsam07. All rights reserved.
+Licensed under MIT (see LICENSE).
+Powered by Baileys (multi-device) + community contributions.
+Credits: Dex Shyam Chaudhari • WhiskeySockets/Baileys team
+⭐ Star this repo if you like it! Help us grow.
+Have a great day! 🚀
