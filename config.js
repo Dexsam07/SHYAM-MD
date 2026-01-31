@@ -1,7 +1,9 @@
 require('dotenv').config();
 
-global.SESSION_ID = process.env.SESSION_ID || "" // put your session id here
-global.PAIRING_NUMBER = process.env.PAIRING_NUMBER || "" // In Case if you don't have session id get pairing code by putting your number here
+DEX_SHYAM = {
+    SESSION_ID: process.env.SESSION_ID || "",          // put your session id here
+    PAIRING_NUMBER: process.env.PAIRING_NUMBER || ""   // In Case if you don't have session id get pairing code by putting your number here
+};
 
 global.APIs = {
     xteam: 'https://api.xteam.xyz',
@@ -29,5 +31,6 @@ global.APIKeys = {
 module.exports = {
     WARN_COUNT: 3,
     APIs: global.APIs,
-    APIKeys: global.APIKeys
+    APIKeys: global.APIKeys,
+    DEX_SHYAM: DEX_SHYAM   // exporting so other files can use it
 };

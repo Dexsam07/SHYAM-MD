@@ -1,5 +1,3 @@
-/* process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'; */
-
 require('./config');
 require('./settings');
 
@@ -73,7 +71,7 @@ setInterval(() => {
     }
 }, 30_000);
 
-let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "913051391005";
+let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "917384287404";
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'));
 
 global.botname = process.env.BOT_NAME || "SHYAM-MD";
@@ -566,7 +564,7 @@ async function startDexDev() {
 
 
 async function main() {
-    printLog('info', 'Starting SHYAM MD BOT...');
+    printLog('info', 'Starting SHYAM-MD BOT...');
     
     const sessionReady = await initializeSession();
     
