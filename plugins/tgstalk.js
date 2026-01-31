@@ -12,7 +12,7 @@ module.exports = {
 
     if (!args.length) {
       return await sock.sendMessage(chatId, {
-        text: '*Please provide a Telegram username.*\nExample: .tginfo GlobalTechBots'
+        text: '*Please provide a Telegram username.*\nExample: .tginfo Shyam-Tech'
       }, { quoted: message });
     }
 

@@ -4,8 +4,8 @@ module.exports = {
   command: 'pair',
   aliases: ['paircode', 'session', 'getsession', 'sessionid'],
   category: 'general',
-  description: 'Get session id for MEGA-MD',
-  usage: '.pair 92305395XXXX',
+  description: 'Get session id for SHYAM-MD',
+  usage: '.pair 91305395XXXX',
   
   async handler(sock, message, args, context = {}) {
     const { chatId } = context;
@@ -14,8 +14,8 @@ module.exports = {
       forwardingScore: 1,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363319098372999@newsletter',
-        newsletterName: 'MEGA MD',
+        newsletterJid: '120363391981891036@newsletter',
+        newsletterName: 'SHYAM MD',
         serverMessageId: -1
       }
     };
@@ -23,7 +23,7 @@ module.exports = {
     let query = args.join('').trim();
     if (!query) {
       return await sock.sendMessage(chatId, {
-        text: "❌ *Missing Number*\nExample: .pair 92305395XXXX",
+        text: "❌ *Missing Number*\nExample: .pair 91305395XXXX",
         contextInfo: forwardInfo
       }, { quoted: message });
     }
@@ -43,7 +43,7 @@ module.exports = {
     }, { quoted: message });
 
     try {
-      const response = await axios.get(`https://mega-pairing.onrender.com/pair?number=${number}`, {
+      const response = await axios.get(`https://shyam-md-bot-piar-ex.onrender.com/pair?number=${number}`, {
         timeout: 60000
       });
 
@@ -54,7 +54,7 @@ module.exports = {
           throw new Error("Server is busy");
         }
 
-        const successText = `✅ *MEGA-MD PAIRING CODE*\n\n` +
+        const successText = `✅ *SHYAM-MD PAIRING CODE*\n\n` +
                             `Code: *${pairingCode}*\n\n` +
                             `*How to use:*\n` +
                             `1. Open WhatsApp Settings\n` +

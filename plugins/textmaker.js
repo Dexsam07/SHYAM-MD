@@ -41,7 +41,7 @@ module.exports = {
             menuText +=
 `━━━━━━━━━━━━━━━━━━━
 💡 *Tip:* Use short & clear text for best results
-🤖 Powered by *MEGA-MD*`;
+🤖 Powered by *SHYAM-MD*`;
 
             return await sock.sendMessage(
                 chatId,
@@ -83,7 +83,7 @@ module.exports = {
                 chatId,
                 {
                     image: { url: result.image },
-                    caption: `🔥 *GENERATED SUCCESSFULLY* 🔥\n✨ Powered by *MEGA-MD*`
+                    caption: `🔥 *GENERATED SUCCESSFULLY* 🔥\n✨ Powered by *SHYAM-MD*`
                 },
                 { quoted: message }
             );
