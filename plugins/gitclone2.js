@@ -16,7 +16,7 @@ module.exports = {
 
       if (!link) {
         return await sock.sendMessage(chatId, { 
-          text: `❌ *Missing Link!*\n\nExample: .gitclone2 https://github.com/Dexsam07/SHYAM-MD` 
+          text: `❌ *Missing Link!*\n\nExample: .gitclone2 https://github.com/GlobalTechInfo/MEGA-MD` 
         }, { quoted: message });
       }
 
@@ -45,7 +45,7 @@ module.exports = {
         document: { url: url },
         fileName: filename,
         mimetype: 'application/zip',
-        caption: `📦 *Repository:* ${user}/${repo}\n✨ *Cloned by SHYAM-MD*`
+        caption: `📦 *Repository:* ${user}/${repo}\n✨ *Cloned by MEGA-MD*`
       }, { quoted: message });
 
     } catch (err) {

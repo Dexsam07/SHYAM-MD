@@ -1,6 +1,6 @@
 /*****************************************************************************
  *                                                                           *
- *                     Developed By Qasim Ali                                *
+ *                     Developed By Dex Shyam Chaudhari                                *
  *                                                                           *
  *  🌐  GitHub   : https://github.com/Dexsam07                         *
  *  ▶️  YouTube  : https://youtube.com/@dex_shyam_07                       *
@@ -82,7 +82,7 @@ module.exports = {
 
 /*****************************************************************************
  *                                                                           *
- *                     Developed By Qasim Ali                                *
+ *                     Developed By Dex Shyam Chaudhari                                *
  *                                                                           *
  *  🌐  GitHub   : https://github.com/Dexsam07                         *
  *  ▶️  YouTube  : https://youtube.com/@dex_shyam_07                       *

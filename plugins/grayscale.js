@@ -57,7 +57,7 @@ module.exports = {
         chatId,
         {
           image: { url: grayFile },
-          caption: `🖤 *Grayscale Image*\n\nProcessed by: SHYAM-MD`
+          caption: `🖤 *Grayscale Image*\n\nProcessed by: MEGA-MD`
         },
         { quoted: message }
       );

@@ -64,7 +64,7 @@ module.exports = {
       const caption = `📘 *Facebook Downloader*
 🎞 Quality: *${selected.resolution || 'Unknown'}*
 
-> *_Downloaded by SHYAM-MD_*`;
+> *_Downloaded by MEGA-MD_*`;
 
       await sock.sendMessage(chatId, { video: { url: videoUrl }, mimetype: 'video/mp4', caption }, { quoted: message });
 

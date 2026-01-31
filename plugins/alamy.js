@@ -4,7 +4,7 @@
  *                                                                           *
  *  🌐  GitHub   : https://github.com/Dexsam07                         *
  *  ▶️  YouTube  : https://youtube.com/@@Dex_shyam_07                       *
- *  💬  WhatsApp : https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07     *
+ *  💬  WhatsApp : https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o     *
  *                                                                           *
  *    © 2026 Dexsam07. All rights reserved.                            *
  *                                                                           *
@@ -66,7 +66,7 @@ module.exports = {
  *                                                                           *
  *  🌐  GitHub   : https://github.com/Dexsam07                         *
  *  ▶️  YouTube  : https://youtube.com/@@Dex_shyam_07                       *
- *  💬  WhatsApp : https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07     *
+ *  💬  WhatsApp : https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o     *
  *                                                                           *
  *    © 2026 Dexsam07. All rights reserved.                            *
  *                                                                           *

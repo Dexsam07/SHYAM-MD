@@ -1,14 +1,14 @@
 /*****************************************************************************
  *                                                                           *
- *                     Developed By Dex Shyam Chaudhari                                *
+ *                     Developed By Qasim Ali                                *
  *                                                                           *
- *  🌐  GitHub   : https://github.com/Dexsam07                         *
- *  ▶️  YouTube  : https://youtube.com/@dex_shyam_07                       *
- *  💬  WhatsApp : https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o     *
+ *  🌐  GitHub   : https://github.com/GlobalTechInfo                         *
+ *  ▶️  YouTube  : https://youtube.com/@GlobalTechInfo                       *
+ *  💬  WhatsApp : https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07     *
  *                                                                           *
- *    © 2026 Dexsam07. All rights reserved.                            *
+ *    © 2026 GlobalTechInfo. All rights reserved.                            *
  *                                                                           *
- *    Description: This file is part of the SHYAM-MD Project.                 *
+ *    Description: This file is part of the MEGA-MD Project.                 *
  *                 Unauthorized copying or distribution is prohibited.       *
  *                                                                           *
  *****************************************************************************/
@@ -53,15 +53,15 @@ module.exports = {
 
 /*****************************************************************************
  *                                                                           *
- *                     Developed By Dex Shyam Chaudhari                                *
+ *                     Developed By Qasim Ali                                *
  *                                                                           *
- *  🌐  GitHub   : https://github.com/Dexsam07                         *
- *  ▶️  YouTube  : https://youtube.com/@dex_shyam_07                       *
- *  💬  WhatsApp : https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o     *
+ *  🌐  GitHub   : https://github.com/GlobalTechInfo                         *
+ *  ▶️  YouTube  : https://youtube.com/@GlobalTechInfo                       *
+ *  💬  WhatsApp : https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07     *
  *                                                                           *
- *    © 2026 Dexsam07. All rights reserved.                            *
+ *    © 2026 GlobalTechInfo. All rights reserved.                            *
  *                                                                           *
- *    Description: This file is part of the SHYAM-MD Project.                 *
+ *    Description: This file is part of the MEGA-MD Project.                 *
  *                 Unauthorized copying or distribution is prohibited.       *
  *                                                                           *
  *****************************************************************************/

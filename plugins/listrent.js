@@ -8,7 +8,7 @@
  *                                                                           *
  *    © 2026 Dexsam07. All rights reserved.                            *
  *                                                                           *
- *    Description: This file is part of the MEGA-MD Project.                 *
+ *    Description: This file is part of the SHYAM-MD Project.                 *
  *                 Unauthorized copying or distribution is prohibited.       *
  *                                                                           *
  *****************************************************************************/
@@ -132,7 +132,7 @@ module.exports = {
  *                                                                           *
  *    © 2026 Dexsam07. All rights reserved.                            *
  *                                                                           *
- *    Description: This file is part of the MEGA-MD Project.                 *
+ *    Description: This file is part of the SHYAM-MD Project.                 *
  *                 Unauthorized copying or distribution is prohibited.       *
  *                                                                           *
  *****************************************************************************/
