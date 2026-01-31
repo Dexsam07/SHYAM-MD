@@ -47,6 +47,10 @@ Easily connect to your WhatsApp account by pair code.
   <a href="https://shyam-md-bot-piar-ex.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/SESSION-ID-ff4d4d?style=for-the-badge" alt="Generate Pair Code"/>
   </a>
+  &nbsp;&nbsp;
+  <a href="https://shyam-md-piar-10000.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/PAIR-CODE-2-ff4d4d?style=for-the-badge" alt="Alternative Pair Code"/>
+  </a>
 </div>
 
 ---
@@ -184,40 +188,25 @@ It is lightweight and can be easily customized to add more commands as per your 
 ## Self Hosting Guide
 
 ### Deploye in Termux/Ubuntu/Vps/Rdp
-   
-```
 pkg update && pkg upgrade -y
-```
-```
-pkg install proot-distro
-```
-```
-proot-distro install ubuntu
-```
-```
-proot-distro login ubuntu
-```
-```
-apt update && apt upgrade -y
-```
-```
-apt install -y webp git ffmpeg curl imagemagick
-```
-```
-apt -y remove nodejs
-curl -fsSl https://deb.nodesource.com/setup_20.x | bash - && apt -y install nodejs
-```
-```
-git clone https://github.com/<your gitHub Username>/SHYAM-MD
-cd SHYAM-MD
-```
-```
-npm install
-```
-```
-npm start
-```
 
+pkg install proot-distro
+
+proot-distro install ubuntu
+
+proot-distro login ubuntu
+
+apt update && apt upgrade -y
+
+apt install -y webp git ffmpeg curl imagemagick
+
+apt -y remove nodejs curl -fsSl https://deb.nodesource.com/setup_20.x | bash - && apt -y install nodejs
+
+git clone https://github.com//SHYAM-MD cd SHYAM-MD
+
+npm install
+
+npm start
 ---
 
 
@@ -272,4 +261,3 @@ This project contains code from various open source projects:
 - If A plugin's code is obfuscated , You don't have permission to edit it in any form 
 - Don't Forget to Give Credits If you are using or Reuploading My Plugins/files
 - Have A Good Day
-
