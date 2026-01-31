@@ -63,7 +63,7 @@ module.exports = {
 📐 Size: ${size}
 🎨 Color: ${color}
 
-𝗕𝗬 DEX 𝗔𝗜`
+𝗕𝗬 𝗠𝗘𝗚𝗔 𝗔𝗜`
         },
         { quoted: message }
       );

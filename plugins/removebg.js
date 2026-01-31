@@ -56,7 +56,7 @@ module.exports = {
 
       await sock.sendMessage(chatId, {
         image: response.data,
-        caption: '✨ *Background removed successfully*\n\n𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 SHYAM-MD'
+        caption: '✨ *Background removed successfully*\n\n𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 𝗠𝗘𝗚𝗔-𝗠𝗗'
       }, { quoted: message });
 
     } catch (err) {
