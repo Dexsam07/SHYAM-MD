@@ -2,43 +2,4 @@ const settings = {
   // Command prefixes (array - supports multiple)
   prefixes: ['.', '!', '/'],
 
-  // Sticker pack & author name
-  packname: 'SHYAM-BOT',
-  author: 'dexsam07',
-
-  // Timezone for logs & time-based features
-  timeZone: 'Asia/Kolkata',
-
-  // Bot display name
-  botName: 'SHYAM-MD',
-
-  // Owner information
-  botOwner: 'Dex Shyam Chaudhari',
-  ownerNumber: '917384287404',          // without + or spaces
-
-  // Giphy API key (for gif commands if used)
-  giphyApiKey: 'qnl7ssQChTdPjsKta2Ax2LMaGXz303tq',
-
-  // Command access mode
-  commandMode: 'public',                // 'public' or 'private'
-
-  // Store / message cache settings
-  maxStoreMessages: 20,
-  storeWriteInterval: 10000,            // 10 seconds
-
-  // Temp file cleanup interval (1 hour)
-  tempCleanupInterval: 1 * 60 * 60 * 1000,
-
-  // Bot description (used in some menus/about)
-  description: 'This is a bot for managing group commands and automating tasks.',
-
-  // Version & update info
-  version: '5.1.0',
-  updateZipUrl: 'https://github.com/Dexsam07/SHYAM-MD/archive/refs/heads/main.zip',
-
-  // Promotion / channel links
-  channelLink: 'https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o',
-  ytch: '@Dex_shyam_07'
-};
-
-module.exports = settings;
+ICAvLyBTdGlja2VyIHBhY2sgJiBhdXRob3IgbmFtZQogIHBhY2tuYW1lOiAnU0hZQU0tQk9UJywKICBhdXRob3I6ICdkZXhzYW0wNycsCgogIC8vIFRpbWV6b25lIGZvciBsb2dzICYgdGltZS1iYXNlZCBmZWF0dXJlcwogIHRpbWVab25lOiAnQXNpYS9Lb2xrYXRhJywKCiAgLy8gQm90IGRpc3BsYXkgbmFtZQogIGJvdE5hbWU6ICdTSFlBTS1NRCcsCgogIC8vIE93bmVyIGluZm9ybWF0aW9uCiAgYm90T3duZXI6ICdEZXggU2h5YW0gQ2hhdWRoYXJpJywKICBvd25lck51bWJlcjogJzkxNzM4NDI4NzQwNCcsICAgICAgICAgIC8vIHdpdGhvdXQgKyBvciBzcGFjZXMKCiAgLy8gR2lwaHkgQVBJIGtleSAoZm9yIGdpZiBjb21tYW5kcyBpZiB1c2VkKQogIGdpcGh5QXBpS2V5OiAncW5sN3NzUUNoVGRQanNLdGEyQXgyTE1hR1h6MzAzdHEnLAoKICAvLyBDb21tYW5kIGFjY2VzcyBtb2RlCiAgY29tbWFuZE1vZGU6ICdwdWJsaWMnLCAgICAgICAgICAgICAgICAvLyAncHVibGljJyBvciAncHJpdmF0ZScKCiAgLy8gU3RvcmUgLyBtZXNzYWdlIGNhY2hlIHNldHRpbmdzCiAgbWF4U3RvcmVNZXNzYWdlczogMjAsCiAgc3RvcmVXcml0ZUludGVydmFsOiAxMDAwMCwgICAgICAgICAgICAvLyAxMCBzZWNvbmRzCgogIC8vIFRlbXAgZmlsZSBjbGVhbnVwIGludGVydmFsICgxIGhvdXIpCiAgdGVtcENsZWFudXBJbnRlcnZhbDogMSAqIDYwICogNjAgKiAxMDAwLAoKICAvLyBCb3QgZGVzY3JpcHRpb24gKHVzZWQgaW4gc29tZSBtZW51cy9hYm91dCkKICBkZXNjcmlwdGlvbjogJ1RoaXMgaXMgYSBib3QgZm9yIG1hbmFnaW5nIGdyb3VwIGNvbW1hbmRzIGFuZCBhdXRvbWF0aW5nIHRhc2tzLicsCgogIC8vIFZlcnNpb24gJiB1cGRhdGUgaW5mbwogIHZlcnNpb246ICc1LjEuMCcsCiAgdXBkYXRlWmlwVXJsOiAnaHR0cHM6Ly9naXRodWIuY29tL0RleHNhbTA3L1NIWUFNLU1EL2FyY2hpdmUvcmVmcy9oZWFkcy9tYWluLnppcCcsCgogIC8vIFByb21vdGlvbiAvIGNoYW5uZWwgbGlua3MKICBjaGFubmVsTGluazogJ2h0dHBzOi8vd2hhdHNhcHAuY29tL2NoYW5uZWwvMDAyOVZiQmdYVHNLd3FTS1pLeTM4dzJvJywKICB5dGNoOiAnQERleF9zaHlhbV8wNycKfTsKCm1vZHVsZS5leHBvcnRzID0gc2V0dGluZ3M7

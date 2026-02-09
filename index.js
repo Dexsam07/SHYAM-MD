@@ -71,7 +71,7 @@ setInterval(() => {
     }
 }, 30_000);
 
-let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "917384287404";
+let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "";
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'));
 
 global.botname = process.env.BOT_NAME || "SHYAM-MD";
