@@ -5,4 +5,32 @@ DEX_SHYAM = {
     PAIRING_NUMBER: process.env.PAIRING_NUMBER || ""   // In Case if you don't have session id get pairing code by putting your number here
 };
 
-Z2xvYmFsLkFQSXMgPSB7CiAgICB4dGVhbTogJ2h0dHBzOi8vYXBpLnh0ZWFtLnh5eicsCiAgICBkeng6ICdodHRwczovL2FwaS5kaGFtenhwbG9pdC5teS5pZCcsCiAgICBsb2w6ICdodHRwczovL2FwaS5sb2xodW1hbi54eXonLAogICAgdmlvbGV0aWNzOiAnaHR0cHM6Ly92aW9sZXRpY3MucHcnLAogICAgbmVveHI6ICdodHRwczovL2FwaS5uZW94ci5teS5pZCcsCiAgICB6ZW56YXBpczogJ2h0dHBzOi8vemVuemFwaXMueHl6JywKICAgIGFrdWFyaTogJ2h0dHBzOi8vYXBpLmFrdWFyaS5teS5pZCcsCiAgICBha3VhcmkyOiAnaHR0cHM6Ly9hcGltdS5teS5pZCcsCiAgICBucnRtOiAnaHR0cHM6Ly9mZy1ucnRtLmRkbnMubmV0JywKICAgIGJnOiAnaHR0cDovL2JvY2hpbC5kZG5zLm5ldCcsCiAgICBmZ21vZHM6ICdodHRwczovL2FwaS1mZ21vZHMuZGRucy5uZXQnCn07CgpnbG9iYWwuQVBJS2V5cyA9IHsKICAgICdodHRwczovL2FwaS54dGVhbS54eXonOiAnZDkwYTllOTg2ZTE4Nzc4YicsCiAgICAnaHR0cHM6Ly9hcGkubG9saHVtYW4ueHl6JzogJzg1ZmFmNzE3ZDA1NDVkMTQwNzQ2NTlhZCcsCiAgICAnaHR0cHM6Ly9hcGkubmVveHIubXkuaWQnOiAneW91cmtleScsCiAgICAnaHR0cHM6Ly92aW9sZXRpY3MucHcnOiAnYmV0YScsCiAgICAnaHR0cHM6Ly96ZW56YXBpcy54eXonOiAneW91cmtleScsCiAgICAnaHR0cHM6Ly9hcGktZmdtb2RzLmRkbnMubmV0JzogJ2ZnLWR5bHV4Jwp9OwoKbW9kdWxlLmV4cG9ydHMgPSB7CiAgICBXQVJOX0NPVU5UOiAzLAogICAgQVBJczogZ2xvYmFsLkFQSXMsCiAgICBBUElLZXlzOiBnbG9iYWwuQVBJS2V5cywKICAgIERFWF9TSFlBTTogREVYX1NIWUFNICAgLy8gZXhwb3J0aW5nIHNvIG90aGVyIGZpbGVzIGNhbiB1c2UgaXQKfTs=
+global.APIs = {
+    xteam: 'https://api.xteam.xyz',
+    dzx: 'https://api.dhamzxploit.my.id',
+    lol: 'https://api.lolhuman.xyz',
+    violetics: 'https://violetics.pw',
+    neoxr: 'https://api.neoxr.my.id',
+    zenzapis: 'https://zenzapis.xyz',
+    akuari: 'https://api.akuari.my.id',
+    akuari2: 'https://apimu.my.id',
+    nrtm: 'https://fg-nrtm.ddns.net',
+    bg: 'http://bochil.ddns.net',
+    fgmods: 'https://api-fgmods.ddns.net'
+};
+
+global.APIKeys = {
+    'https://api.xteam.xyz': 'd90a9e986e18778b',
+    'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
+    'https://api.neoxr.my.id': 'yourkey',
+    'https://violetics.pw': 'beta',
+    'https://zenzapis.xyz': 'yourkey',
+    'https://api-fgmods.ddns.net': 'fg-dylux'
+};
+
+module.exports = {
+    WARN_COUNT: 3,
+    APIs: global.APIs,
+    APIKeys: global.APIKeys,
+    DEX_SHYAM: DEX_SHYAM   // exporting so other files can use it
+};

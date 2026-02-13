@@ -3,4 +3,64 @@
   "description": " Whatsapp automation",
   "keywords": [
     "whatsapp Bot"
-ICBdLAogICJyZXBvc2l0b3J5IjogImh0dHBzOi8vZ2l0aHViLmNvbS9EZXhzYW0wNy9TSFlBTS1NRCIsCiAgInN0YWNrIjogImNvbnRhaW5lciIsCiAgImVudiI6IHsKICAgICJNT05HT19VUkwiOiB7CiAgICAgICJkZXNjcmlwdGlvbiI6ICJQdXQgaWYgeW91IGhhdmUgbW9uZ29kYiBkYXRhYmFzZSB1cmwiLAogICAgICAicmVxdWlyZWQiOiBmYWxzZSwKICAgICAgInZhbHVlIjogIiIKICAgIH0sCiAgICAiTVlTUUxfVVJMIjogewogICAgICAiZGVzY3JpcHRpb24iOiAiUHV0IGlmIHlvdSBoYXZlIG15c3FsIGRhdGFiYXNlIHVybCIsCiAgICAgICJyZXF1aXJlZCI6IGZhbHNlLAogICAgICAidmFsdWUiOiAiIgogICAgfSwKICAgICJQT1NUR1JFU19VUkwiOiB7CiAgICAgICJkZXNjcmlwdGlvbiI6ICJQdXQgaWYgeW91IGhhdmUgcG9zdGdyZXMgZGF0YWJhc2UgdXJsIiwKICAgICAgInJlcXVpcmVkIjogZmFsc2UsCiAgICAgICJ2YWx1ZSI6ICIiCiAgICB9LAogICAgICJIS0VZIjogewogICAgICAiZGVzY3JpcHRpb24iOiAiUHV0IHlvdXIgSGVyb2t1IGFwaSBrZXkgSGVyZSAsIEdldCBvbmUgZnJvbSBoZXJlIGh0dHBzOi8vZGFzaGJvYXJkLmhlcm9rdS5jb20vYWNjb3VudCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWx1ZSI6ICIiCiAgICB9LAogICAgICJIQVBQIjogewogICAgICAiZGVzY3JpcHRpb24iOiAiUHV0IHRoZSBIZXJva3UgYXBwIG5hbWUsIHNhbWUgYXMgYWJvdmUgZW50ZXJlZCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWx1ZSI6ICIiCiAgICB9LAogICAgIlNFU1NJT05fSUQiOiB7CiAgICAgICJkZXNjcmlwdGlvbiI6ICJQdXQgeW91ciBzZXNzaW9uIGlkIiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbHVlIjogIiIKICAgIH0sCiAgICAgIlJFTU9WRUJHX0tFWSI6IHsKICAgICAgImRlc2NyaXB0aW9uIjogIlB1dCB5b3VyIFJlbW92ZSBiYWNrZ3JvdW5kIGFwaSBrZXkiLAogICAgICAicmVxdWlyZWQiOiBmYWxzZSwKICAgICAgInZhbHVlIjogIiIKICAgIH0KICAgIH0sCiAgICAiYnVpbGRwYWNrcyI6IFsKICAgIHsKICAgICAgInVybCI6ICJoZXJva3Uvbm9kZWpzIgogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwczovL2dpdGh1Yi5jb20vRHVja3lUZWFtL2hlcm9rdS1idWlsZHBhY2staW1hZ2VtYWdpY2suZ2l0IgogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwczovL2dpdGh1Yi5jb20vam9uYXRoYW5vbmcvaGVyb2t1LWJ1aWxkcGFjay1mZm1wZWctbGF0ZXN0IgogICAgfSwKICAgIHsKICAgICAgInVybCI6ICJodHRwczovL2dpdGh1Yi5jb20vY2xodWFuZy9oZXJva3UtYnVpbGRwYWNrLXdlYnAtYmluYXJpZXMuZ2l0IgogICAgfQogIF0sCiAgImZvcm1hdGlvbiI6IHsKICAgICJ3ZWIiOiB7CiAgICAgICJxdWFudGl0eSI6IDEsCiAgICAgICJzaXplIjogImJhc2ljIgogICAgfQogIH0KfQo=
+  ],
+  "repository": "https://github.com/Dexsam07/SHYAM-MD",
+  "stack": "container",
+  "env": {
+    "MONGO_URL": {
+      "description": "Put if you have mongodb database url",
+      "required": false,
+      "value": ""
+    },
+    "MYSQL_URL": {
+      "description": "Put if you have mysql database url",
+      "required": false,
+      "value": ""
+    },
+    "POSTGRES_URL": {
+      "description": "Put if you have postgres database url",
+      "required": false,
+      "value": ""
+    },
+     "HKEY": {
+      "description": "Put your Heroku api key Here , Get one from here https://dashboard.heroku.com/account",
+      "required": true,
+      "value": ""
+    },
+     "HAPP": {
+      "description": "Put the Heroku app name, same as above entered",
+      "required": true,
+      "value": ""
+    },
+    "SESSION_ID": {
+      "description": "Put your session id",
+      "required": true,
+      "value": ""
+    },
+     "REMOVEBG_KEY": {
+      "description": "Put your Remove background api key",
+      "required": false,
+      "value": ""
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
