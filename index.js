@@ -53,36 +53,8 @@ const commandHandler = require('./lib/commandHandler');
 store.readFromFile();
 setInterval(() => store.writeToFile(), settings.storeWriteInterval || 10000);
 
-// ========== Safe Plugin Loader ==========
-function safeLoadCommands() {
-    const pluginsDir = path.join(__dirname, 'plugins');
-    if (!fs.existsSync(pluginsDir)) {
-        printLog('warning', 'Plugins folder not found');
-        return;
-    }
-
-    const pluginFiles = fs.readdirSync(pluginsDir).filter(file => file.endsWith('.js'));
-    let loadedCount = 0;
-    let failedCount = 0;
-
-    for (const file of pluginFiles) {
-        const pluginPath = path.join(pluginsDir, file);
-        try {
-            require(pluginPath);
-            loadedCount++;
-        } catch (err) {
-            printLog('error', `Failed to load plugin ${file}: ${err.message}`);
-            failedCount++;
-        }
-    }
-
-    printLog('info', `Plugins loaded: ${loadedCount} successful, ${failedCount} failed`);
-}
-
-// Replace the original loadCommands with our safe version
-commandHandler.loadCommands = safeLoadCommands;
-commandHandler.loadCommands(); // Now loads plugins safely
-// ===========================================
+commandHandler.loadCommands();
+// console.log(chalk.greenBright(`✅ Loaded ${commandHandler.commands.size} Plugins`));
 
 setInterval(() => {
     if (global.gc) {
@@ -99,7 +71,7 @@ setInterval(() => {
     }
 }, 30_000);
 
-let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "";
+let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "+917384287404";
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'));
 
 global.botname = process.env.BOT_NAME || "SHYAM-MD";
@@ -398,12 +370,12 @@ async function startDexDev() {
         });
 
         DexDev.getName = (jid, withoutContact = false) => {
-            let id = DexDev.decodeJid(jid);
+            id = DexDev.decodeJid(jid);
             withoutContact = DexDev.withoutContact || withoutContact;
             let v;
             if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
                 v = store.contacts[id] || {};
-                if (!(v.name || v.subject)) v = await DexDev.groupMetadata(id) || {};
+                if (!(v.name || v.subject)) v = DexDev.groupMetadata(id) || {};
                 resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'));
             });
             else v = id === '0@s.whatsapp.net' ? {
@@ -531,7 +503,7 @@ async function startDexDev() {
                 console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: Dex Shyam Chaudhari`));
                 console.log(chalk.green(`${global.themeemoji || '•'} 🤖 Bot Connected Successfully! ✅`));
                 console.log(chalk.blue(`Bot Version: ${settings.version}`));
-                console.log(chalk.cyan(`Loaded Commands: ${commandHandler.commands ? commandHandler.commands.size : 'N/A'}`));
+                console.log(chalk.cyan(`Loaded Commands: ${commandHandler.commands.size}`));
                 console.log(chalk.cyan(`Prefixes: ${settings.prefixes.join(', ')}`));
                 console.log(chalk.gray(`Backend: ${store.getStats().backend}`));
                 console.log();
@@ -708,3 +680,5 @@ fs.watchFile(file, () => {
     delete require.cache[file];
     require(file);
 });
+
+
