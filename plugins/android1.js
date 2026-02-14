@@ -1,4 +1,4 @@
-const Dex = require('api-Dex');
+const Qasim = require('api-qasim');
 const axios = require('axios');
 
 module.exports = {
