@@ -1,3 +1,5 @@
+/* process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'; */
+
 require('./config');
 require('./settings');
 
@@ -53,36 +55,8 @@ const commandHandler = require('./lib/commandHandler');
 store.readFromFile();
 setInterval(() => store.writeToFile(), settings.storeWriteInterval || 10000);
 
-// ========== Safe Plugin Loader ==========
-function safeLoadCommands() {
-    const pluginsDir = path.join(__dirname, 'plugins');
-    if (!fs.existsSync(pluginsDir)) {
-        printLog('warning', 'Plugins folder not found');
-        return;
-    }
-
-    const pluginFiles = fs.readdirSync(pluginsDir).filter(file => file.endsWith('.js'));
-    let loadedCount = 0;
-    let failedCount = 0;
-
-    for (const file of pluginFiles) {
-        const pluginPath = path.join(pluginsDir, file);
-        try {
-            require(pluginPath);
-            loadedCount++;
-        } catch (err) {
-            printLog('error', `Failed to load plugin ${file}: ${err.message}`);
-            failedCount++;
-        }
-    }
-
-    printLog('info', `Plugins loaded: ${loadedCount} successful, ${failedCount} failed`);
-}
-
-// Replace the original loadCommands with our safe version
-commandHandler.loadCommands = safeLoadCommands;
-commandHandler.loadCommands(); // Now loads plugins safely
-// ===========================================
+commandHandler.loadCommands();
+// console.log(chalk.greenBright(`✅ Loaded ${commandHandler.commands.size} Plugins`));
 
 setInterval(() => {
     if (global.gc) {
@@ -99,7 +73,7 @@ setInterval(() => {
     }
 }, 30_000);
 
-let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "";
+let phoneNumber = global.PAIRING_NUMBER || process.env.PAIRING_NUMBER || "923051391005";
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'));
 
 global.botname = process.env.BOT_NAME || "SHYAM-MD";
@@ -226,7 +200,7 @@ server.listen(PORT, () => {
     printLog('success', `Server listening on port ${PORT}`);
 });
 
-async function startDexDev() {
+async function startShyamDex() {
     try {
         let { version, isLatest } = await fetchLatestBaileysVersion();
         
@@ -246,7 +220,7 @@ async function startDexDev() {
             printLog('info', '👻 STEALTH MODE IS ACTIVE - Starting in stealth mode');
         }
 
-        const DexDev = makeWASocket({
+        const ShyamDex = makeWASocket({
             version,
             logger: pino({ level: 'silent' }),
             printQRInTerminal: !pairingCode,
@@ -269,12 +243,12 @@ async function startDexDev() {
             keepAliveIntervalMs: 10000,
         });
 
-        const originalSendPresenceUpdate = DexDev.sendPresenceUpdate;
-        const originalReadMessages = DexDev.readMessages;
-        const originalSendReceipt = DexDev.sendReceipt;
-        const originalSendReadReceipt = DexDev.sendReadReceipt;
+        const originalSendPresenceUpdate = ShyamDex.sendPresenceUpdate;
+        const originalReadMessages = ShyamDex.readMessages;
+        const originalSendReceipt = ShyamDex.sendReceipt;
+        const originalSendReadReceipt = ShyamDex.sendReadReceipt;
         
-        DexDev.sendPresenceUpdate = async function(...args) {
+        ShyamDex.sendPresenceUpdate = async function(...args) {
             const ghostMode = await store.getSetting('global', 'stealthMode');
             if (ghostMode && ghostMode.enabled) {
                 printLog('info', '👻 Blocked presence update (stealth mode)');
@@ -283,7 +257,7 @@ async function startDexDev() {
             return originalSendPresenceUpdate.apply(this, args);
         };
         
-        DexDev.readMessages = async function(...args) {
+        ShyamDex.readMessages = async function(...args) {
             const ghostMode = await store.getSetting('global', 'stealthMode');
             if (ghostMode && ghostMode.enabled) {
                 return;
@@ -292,7 +266,7 @@ async function startDexDev() {
         };
 
         if (originalSendReceipt) {
-            DexDev.sendReceipt = async function(...args) {
+            ShyamDex.sendReceipt = async function(...args) {
                 const ghostMode = await store.getSetting('global', 'stealthMode');
                 if (ghostMode && ghostMode.enabled) {
                     return;
@@ -302,7 +276,7 @@ async function startDexDev() {
         }
         
         if (originalSendReadReceipt) {
-            DexDev.sendReadReceipt = async function(...args) {
+            ShyamDex.sendReadReceipt = async function(...args) {
                 const ghostMode = await store.getSetting('global', 'stealthMode');
                 if (ghostMode && ghostMode.enabled) {
                     return;
@@ -311,8 +285,8 @@ async function startDexDev() {
             };
         }
         
-        const originalQuery = DexDev.query;
-        DexDev.query = async function(node, ...args) {
+        const originalQuery = ShyamDex.query;
+        ShyamDex.query = async function(node, ...args) {
             const ghostMode = await store.getSetting('global', 'stealthMode');
             if (ghostMode && ghostMode.enabled) {
                 if (node && node.tag === 'receipt') {
@@ -325,15 +299,15 @@ async function startDexDev() {
             return originalQuery.apply(this, [node, ...args]);
         };
         
-        DexDev.isGhostMode = async () => {
+        ShyamDex.isGhostMode = async () => {
             const ghostMode = await store.getSetting('global', 'stealthMode');
             return ghostMode && ghostMode.enabled;
         };
 
-        DexDev.ev.on('creds.update', saveCreds);
-        store.bind(DexDev.ev);
+        ShyamDex.ev.on('creds.update', saveCreds);
+        store.bind(ShyamDex.ev);
         
-        DexDev.ev.on('messages.upsert', async (chatUpdate) => {
+        ShyamDex.ev.on('messages.upsert', async (chatUpdate) => {
             try {
                 const mek = chatUpdate.messages[0];
                 if (!mek.message) return;
@@ -343,34 +317,34 @@ async function startDexDev() {
                     : mek.message;
 
                 if (mek.key && mek.key.remoteJid === 'status@broadcast') {
-                    await handleStatus(DexDev, chatUpdate);
+                    await handleStatus(ShyamDex, chatUpdate);
                     return;
                 }
 
-                if (!DexDev.public && !mek.key.fromMe && chatUpdate.type === 'notify') {
+                if (!ShyamDex.public && !mek.key.fromMe && chatUpdate.type === 'notify') {
                     const isGroup = mek.key?.remoteJid?.endsWith('@g.us');
                     if (!isGroup) return;
                 }
 
                 if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return;
 
-                if (DexDev?.msgRetryCounterCache) {
-                    DexDev.msgRetryCounterCache.clear();
+                if (ShyamDex?.msgRetryCounterCache) {
+                    ShyamDex.msgRetryCounterCache.clear();
                 }
 
                 try {
-                    await handleMessages(DexDev, chatUpdate);
+                    await handleMessages(ShyamDex, chatUpdate);
                 } catch (err) {
                     printLog('error', `Error in handleMessages: ${err.message}`);
                     if (mek.key && mek.key.remoteJid) {
-                        await DexDev.sendMessage(mek.key.remoteJid, {
+                        await ShyamDex.sendMessage(mek.key.remoteJid, {
                             text: '❌ An error occurred while processing your message.',
                             contextInfo: {
                                 forwardingScore: 1,
                                 isForwarded: true,
                                 forwardedNewsletterMessageInfo: {
                                     newsletterJid: '120363391981891036@newsletter',
-                                    newsletterName: 'SHYAM MD',
+                                    newsletterName: 'SHYAM-MD OFC',
                                     serverMessageId: -1
                                 }
                             }
@@ -382,7 +356,7 @@ async function startDexDev() {
             }
         });
 
-        DexDev.decodeJid = (jid) => {
+        ShyamDex.decodeJid = (jid) => {
             if (!jid) return jid;
             if (/:\d+@/gi.test(jid)) {
                 let decode = jidDecode(jid) || {};
@@ -390,33 +364,33 @@ async function startDexDev() {
             } else return jid;
         };
 
-        DexDev.ev.on('contacts.update', update => {
+        ShyamDex.ev.on('contacts.update', update => {
             for (let contact of update) {
-                let id = DexDev.decodeJid(contact.id);
+                let id = ShyamDex.decodeJid(contact.id);
                 if (store && store.contacts) store.contacts[id] = { id, name: contact.notify };
             }
         });
 
-        DexDev.getName = (jid, withoutContact = false) => {
-            let id = DexDev.decodeJid(jid);
-            withoutContact = DexDev.withoutContact || withoutContact;
+        ShyamDex.getName = (jid, withoutContact = false) => {
+            id = ShyamDex.decodeJid(jid);
+            withoutContact = ShyamDex.withoutContact || withoutContact;
             let v;
             if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
                 v = store.contacts[id] || {};
-                if (!(v.name || v.subject)) v = await DexDev.groupMetadata(id) || {};
+                if (!(v.name || v.subject)) v = ShyamDex.groupMetadata(id) || {};
                 resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'));
             });
             else v = id === '0@s.whatsapp.net' ? {
                 id,
                 name: 'WhatsApp'
-            } : id === DexDev.decodeJid(DexDev.user.id) ?
-                DexDev.user :
+            } : id === ShyamDex.decodeJid(ShyamDex.user.id) ?
+                ShyamDex.user :
                 (store.contacts[id] || {});
             return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international');
         };
 
-        DexDev.public = true;
-        DexDev.serializeM = (m) => smsg(DexDev, m, store);
+        ShyamDex.public = true;
+        ShyamDex.serializeM = (m) => smsg(ShyamDex, m, store);
 
         const isRegistered = state.creds?.registered === true;
         
@@ -432,7 +406,7 @@ async function startDexDev() {
                 phoneNumberInput = process.env.PAIRING_NUMBER;
                 printLog('info', `Using phone number from environment: ${phoneNumberInput}`);
             } else if (rl && !rl.closed) {
-                phoneNumberInput = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFormat: 6281376552730 (without + or spaces) : `)));
+                phoneNumberInput = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFormat: 918137655273 (without + or spaces) : `)));
             } else {
                 phoneNumberInput = phoneNumber;
                 printLog('info', `Using default phone number: ${phoneNumberInput}`);
@@ -452,7 +426,7 @@ async function startDexDev() {
 
             setTimeout(async () => {
                 try {
-                    let code = await DexDev.requestPairingCode(phoneNumberInput);
+                    let code = await ShyamDex.requestPairingCode(phoneNumberInput);
                     code = code?.match(/.{1,4}/g)?.join("-") || code;
                     console.log(chalk.black(chalk.bgGreen(`Your Pairing Code : `)), chalk.black(chalk.white(code)));
                     printLog('success', `Pairing code generated: ${code}`);
@@ -478,7 +452,7 @@ async function startDexDev() {
             }
         }
 
-        DexDev.ev.on('connection.update', async (s) => {
+        ShyamDex.ev.on('connection.update', async (s) => {
             const { connection, lastDisconnect, qr } = s;
             
             if (qr) {
@@ -492,7 +466,7 @@ async function startDexDev() {
             if (connection == "open") {
                 printLog('success', 'Bot connected successfully!');
                 const { startAutoBio } = require('./plugins/setbio');
-                startAutoBio(DexDev); 
+                startAutoBio(ShyamDex); 
                 const ghostMode = await store.getSetting('global', 'stealthMode');
                 if (ghostMode && ghostMode.enabled) {
                     printLog('info', '👻 STEALTH MODE ACTIVE - Bot is in stealth mode');
@@ -500,20 +474,20 @@ async function startDexDev() {
                     console.log(chalk.gray('• No typing indicators'));
                 }
                 
-                console.log(chalk.yellow(`🌿Connected to => ` + JSON.stringify(DexDev.user, null, 2)));
+                console.log(chalk.yellow(`🌿Connected to => ` + JSON.stringify(ShyamDex.user, null, 2)));
 
                 try {
-                    const botNumber = DexDev.user.id.split(':')[0] + '@s.whatsapp.net';
+                    const botNumber = ShyamDex.user.id.split(':')[0] + '@s.whatsapp.net';
                     const ghostStatus = (ghostMode && ghostMode.enabled) ? '\n👻 Stealth Mode: ACTIVE' : '';
                     
-                    await DexDev.sendMessage(botNumber, {
+                    await ShyamDex.sendMessage(botNumber, {
                         text: `🤖 Bot Connected Successfully!\n\n⏰ Time: ${new Date().toLocaleString()}\n✅ Status: Online and Ready!${ghostStatus}\n\n✅Make sure to join below channel`,
                         contextInfo: {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
                                 newsletterJid: '120363391981891036@newsletter',
-                                newsletterName: 'SHYAM MD',
+                                newsletterName: 'SHYAM-MD OFC',
                                 serverMessageId: -1
                             }
                         }
@@ -525,13 +499,13 @@ async function startDexDev() {
                  await delay(1999);
                 console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'SHYAM-MD'} ]`)}\n\n`));
                 console.log(chalk.cyan(`< ================================================== >`));
-                console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: @dex_shyam_07`));
+                console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: Dexsam07`));
                 console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: Dexsam07`));
                 console.log(chalk.magenta(`${global.themeemoji || '•'} WA NUMBER: ${owner}`));
-                console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: Dex Shyam Chaudhari`));
+                console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: Mohammad Samim Akhtar`));
                 console.log(chalk.green(`${global.themeemoji || '•'} 🤖 Bot Connected Successfully! ✅`));
                 console.log(chalk.blue(`Bot Version: ${settings.version}`));
-                console.log(chalk.cyan(`Loaded Commands: ${commandHandler.commands ? commandHandler.commands.size : 'N/A'}`));
+                console.log(chalk.cyan(`Loaded Commands: ${commandHandler.commands.size}`));
                 console.log(chalk.cyan(`Prefixes: ${settings.prefixes.join(', ')}`));
                 console.log(chalk.gray(`Backend: ${store.getStats().backend}`));
                 console.log();
@@ -555,30 +529,30 @@ async function startDexDev() {
                 if (shouldReconnect) {
                     printLog('connection', 'Reconnecting in 5 seconds...');
                     await delay(5000);
-                    startDexDev();
+                    startShyamDex();
                 }
             }
         });
 
-        DexDev.ev.on('call', async (calls) => {
-            await handleCall(DexDev, calls);
+        ShyamDex.ev.on('call', async (calls) => {
+            await handleCall(ShyamDex, calls);
         });
 
-        DexDev.ev.on('group-participants.update', async (update) => {
-            await handleGroupParticipantUpdate(DexDev, update);
+        ShyamDex.ev.on('group-participants.update', async (update) => {
+            await handleGroupParticipantUpdate(ShyamDex, update);
         });
 
-        DexDev.ev.on('status.update', async (status) => {
-            await handleStatus(DexDev, status);
+        ShyamDex.ev.on('status.update', async (status) => {
+            await handleStatus(ShyamDex, status);
         });
 
-        DexDev.ev.on('messages.reaction', async (reaction) => {
-            await handleStatus(DexDev, reaction);
+        ShyamDex.ev.on('messages.reaction', async (reaction) => {
+            await handleStatus(ShyamDex, reaction);
         });
 
-        return DexDev;
+        return ShyamDex;
     } catch (error) {
-        printLog('error', `Error in startDexDev: ${error.message}`);
+        printLog('error', `Error in startShyamDex: ${error.message}`);
         
         if (rl && !rl.closed) {
             rl.close();
@@ -586,13 +560,13 @@ async function startDexDev() {
         }
         
         await delay(5000);
-        startDexDev();
+        startShyamDex();
     }
 }
 
 
 async function main() {
-    printLog('info', 'Starting SHYAM-MD BOT...');
+    printLog('info', 'Starting SHYAM MD BOT...');
     
     const sessionReady = await initializeSession();
     
@@ -604,7 +578,7 @@ async function main() {
     
     await delay(3000);
     
-    startDexDev().catch(error => {
+    startShyamDex().catch(error => {
         printLog('error', `Fatal error: ${error.message}`);
         
         if (rl && !rl.closed) {
@@ -617,6 +591,18 @@ async function main() {
 
 main();
 
+const sessionDir = path.join(process.cwd(), 'session');
+
+setInterval(() => {
+  if (!fs.existsSync(sessionDir)) return;
+  fs.readdir(sessionDir, (err, files) => {
+    if (err) return;
+    for (const file of files) {
+      if (file === 'creds.json') continue;
+      fs.unlink(path.join(sessionDir, file), () => {});
+    }
+  });
+}, 3 * 60 * 1000);
 
 const customTemp = path.join(process.cwd(), 'temp');
 if (!fs.existsSync(customTemp)) fs.mkdirSync(customTemp, { recursive: true });
@@ -708,3 +694,5 @@ fs.watchFile(file, () => {
     delete require.cache[file];
     require(file);
 });
+
+
