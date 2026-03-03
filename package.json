@@ -1,6 +1,6 @@
 {
-  "name": "shyam-bot",
-  "version": "5.1.0",
+  "name": "Shyam",
+  "version": "5.2.0",
   "description": "WhatsApp Bot",
   "main": "index.js",
   "directories": {
@@ -28,10 +28,10 @@
     "whatsapp-api",
     "baileys-bot",
     "whatsApp",
-    "shyam-bot",
-    "shyam-bot",
+    "Shyam-bot",
+    "Shyam-md",
     "multi-device",
-    "Dex-ai"
+    "mega-ai"
   ],
   "homepage": "https://github.com/Dexsam07/SHYAM-MD",
   "repository": {
@@ -88,6 +88,21 @@
     "ytdl-core": "^4.11.5"
   },
   "overrides": {
+    "wa-sticker-formatter": {
+      "sharp": "$sharp",
+      "axios": "$axios",
+      "fluent-ffmpeg": "$fluent-ffmpeg",
+      "file-type": "$file-type",
+      "fs-extra": "$fs-extra",
+      "node-webpmux": "$node-webpmux"
+    },
+    "gtts": {
+      "request": {
+        "form-data": "^4.0.1",
+        "qs": "^6.14.1",
+        "tough-cookie": "^4.1.3"
+      }
+    },
     "jimp": "^1.6.0"
   },
   "engines": {
