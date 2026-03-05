@@ -36,11 +36,11 @@
 ### 2. Get Session ID / Pair Code (Important!)
 
 <div align="center" style="margin: 20px 0;">
-  <a href="https://shyam-md-bot-piar-ex.onrender.com/" target="_blank">
+  <a href="https://as-dex-pair.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/PAIR+CODE+-+OFFICIAL-FF0000?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Official Pair"/>
   </a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://shyam-md-piar-10000.onrender.com/" target="_blank">
+  <a href="https://as-dex-pair.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/PAIR+CODE+-+ALTERNATE-DC143C?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Alternative Pair"/>
   </a>
 </div>
