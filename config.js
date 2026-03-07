@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-SHYAM_MD = {
+DEX_SHYAM = {
     SESSION_ID: process.env.SESSION_ID || "",          // put your session id here
     PAIRING_NUMBER: process.env.PAIRING_NUMBER || ""   // In Case if you don't have session id get pairing code by putting your number here
 };

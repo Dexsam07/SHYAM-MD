@@ -1,4 +1,4 @@
-FROM quay.io/Shyam_md/Shyam-bot:latest
+FROM quay.io/qasimtech/Shyam-bot:latest
 
 WORKDIR /root/shyam-md
 
