@@ -4,47 +4,43 @@
 
 ______
 
-<p align="center">
-  <a href="https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o" target="_blank">
-    <img src="https://raw.githubusercontent.com/dexsam07/SHYAM-MD/main/Shyam/mr.svg" width="300" alt="MR Shyam"/>
-  </a>
-</p>
+[![Shyam](https://raw.githubusercontent.com/dexsam07/SHYAM-MD/main/Shyam/mr.svg)](https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o)
 
 ___ 
 
 <p align="center">
   <a href="https://github.com/dexsam07" target="_blank">
-    <img src="./Shyam/dev-gold-mini.svg" width="300" alt="Developer — MR Shyam Gold 3D">
+    <img src="./Shyam/dev-gold-mini.svg" width="300" alt="Developer — MR Shyam (Gold 3D)">
   </a>
 </p>
 
 <p align="center">
   <a href="https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o" target="_blank">
-    <img src="./Shyam/channel-update.svg" width="350" alt="Bot Updating — WhatsApp Channel Join Fast">
+    <img src="./Shyam/channel-update.svg" width="350" alt="Bot Updating — WhatsApp Channel | Join Fast">
   </a>
 </p>
 
 ---------
 
 <p align="center">
-  <a href="https://github.com/dexsam07/SHYAM-MD"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=JavaScript&style=square&color=ff69b4"></a> &nbsp;
+<a href="https://github.com/dexsam07/SHYAM-MD"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=JavaScript&style=square&color=darkpink"></a> &nbsp;
   <img src="https://komarev.com/ghpvc/?username=SHYAM-MD&label=VIEWS&style=square&color=blue" />
 </p>
 
 -------------
 
 <p align="center">
-  <img src="Shyam/feature-bot.svg" alt="Feature Bot" width="900"/>
+<img src="Shyam/feature-bot.svg" alt="Feature Bot" width="900"/>
 </p>
 
 <p align="center">
-  <img src="Shyam/license.svg" alt="License" width="200"/>
+<img src="Shyam/license.svg" alt="License" width="200"/>
 </p>
 
 --------------
 
 <p align="center">
-  <img src="Shyam/maintenance.svg" alt="Maintenance" width="120"/>
+<img src="Shyam/maintenance.svg" alt="Maintenance" width="120"/>
 </p>
 
 <p align="center">
@@ -53,25 +49,34 @@ ___
   </a>
 </p>
 
+---
+
+## 🔥 **PAIRING SITES – 3 OPTIONS (HINGLISH MEIN SAMJHO)**
+
+> **🔹 #1 – Fastest Pairing Site**  
+> 👉 [dex-pair-ai.onrender.com](https://dex-pair-ai.onrender.com/) – **Tez session code milega**  
+
+> **🔹 #2 – Mini Bot Single Pairing**  
+> 👉 [the-dex-mini.onrender.com](https://the-dex-mini.onrender.com/) – **Ek baar pair karo, bot connect ho jayega**  
+
+> **🔹 #3 – Normal Pairing (Stable)**  
+> 👉 [dex-pairing-session.onrender.com](https://dex-pairing-session.onrender.com/) – **Session ID generate karo aur bot mein daalo**  
+
 <p align="center">
   <a href="https://dex-pair-ai.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
-</p>
-
-<p align="center">
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
-</p>
-
-<p align="center">
   <a href="https://dex-pairing-session.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
--------------
+---
+
+## 🚀 **DEPLOYMENT – KAHAN KAISE KAREIN?**
 
 <p align="center">
   <img src="./Shyam/deployment.svg" width="600" alt="SHYAM MD — Deployment Ticker">
@@ -104,11 +109,11 @@ ___
   </tr>
 </table>  
 
--------------
+---
 
-## 🚀 **FREE DEPLOYMENT – SHYAM MD GITHUB WORKFLOW (ERROR FIXED)**
+## 🧠 **GITHUB WORKFLOW – FREE DEPLOYMENT (ERROR FIXED)**
 
-> **Yeh code apne `.github/workflows/node.js.yml` mein daalo – GitHub Actions automatically deploy karega bot ko!**
+> **Yeh code apne `.github/workflows/node.js.yml` mein daalo – GitHub Actions automatically bot deploy karega!**
 
 ```yaml
 name: Node.js CI
@@ -152,79 +157,7 @@ jobs:
 
 ---
 
-<p align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif" alt="divider"/>
-</p>
-
-📢 STAY CONNECTED – UPDATES, FEATURES & TUTORIALS!
-
-<a href="https://youtube.com/@dex-shyam-tech" target="_blank">
-  <img src="Shyam/youtube.svg" alt="YouTube" width="250"/>
-</a>
-
-<p align="center">
-  <img src="https://i.imgur.com/LyHic3i.gif" alt="footer divider"/>
-</p>
-
----
-
-⚠️ WARNING / चेतावनी !
-
-<div style="background-color: #000000; border-left: 5px solid #ff00ff; padding: 10px; border-radius: 0 15px 15px 0; box-shadow: 0 0 15px #ff00ff;">
-  <h3 style="color: #00ffff;">⚠️ DISCLAIMER</h3>
-  <p style="color: #ffffff;">
-    <b>🔴 Ye Bot WhatsApp Inc. Se Affiliate Nahi Hai |</b><br>
-    <b>🔴 Iska Use Apni Jimmedari Par Karein |</b><br>
-    <b>🔴 Galat Istemal Se Account Ban Ho Sakta Hai</b>
-  </p>
-</div>
-
----
-
-<p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%" alt="divider"/>
-</p>
-
-🌟 CONTRIBUTORS / योगदानकर्ता
-
-<div style="margin-top:20px">
-
-https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&background=00000000&center=true&vCenter=true&width=500&lines=THANKS+TO+ALL+CONTRIBUTORS+%F0%9F%99%8F;SPECIAL+THANKS+TO+OUR+STAR+SUPPORTERS+%E2%AD%90
-
-</div>
-
-<p align="center">
-  <a href="https://github.com/dexsam07/SHYAM-MD/stargazers">
-    <img src="http://reporoster.com/stars/dark/dexsam07/SHYAM-MD" alt="Stargazers Repo Roster For @dexsam07/SHYAM-MD">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/dexsam07/SHYAM-MD/network/members">
-    <img src="http://reporoster.com/forks/dark/dexsam07/SHYAM-MD" alt="Forkers Repo Roster For @dexsam07/SHYAM-MD">
-  </a>
-</p>
-
-<p align="center">
-  <img src="Shyam/nolove.svg" alt="NoLove" width="250"/>
-</p>
-
----
-
-📝 HINGLISH SUMMARY – EK NAZAR MEIN SAB KUCH
-
-Topic Hinglish Me Samjho
-Bot Ka Naam SHYAM-MD – WhatsApp Auto-Reply Bot
-Language JavaScript (Node.js)
-Pairing Code Upar diye gaye 3 links se session ID le sakte ho
-Deploy Kaise Karein? Heroku, Koyeb, Railway, Bot-Hosting, Render – sab pe deploy ho sakta hai
-GitHub Workflow Free deployment ke liye upar diya gaya YAML code use karo
-Warning WhatsApp official nahi hai, misuse mat karo warna account ban ho sakta hai
-Owner MR Shyam (Dex-Sam) – YouTube pe tutorials milte hain
-
----
-
-🔧 INSTALLATION / SETUP – LOCAL MEIN KAISE CHALAYEIN?
+📦 LOCAL SETUP – APNE PC PE KAISE CHALAYEIN?
 
 ```bash
 # 1. Repo clone karo
@@ -240,15 +173,64 @@ npm install
 npm start
 ```
 
-📌 Note: Pairing code ke liye upar diye gaye teen (3) links mein se kisi ek par jaake session ID generate karo aur bot mein daalo.
+💡 Tip: Pairing code ke liye upar diye gaye teen (3) links mein se kisi ek par jaake session ID generate karo aur bot mein daalo.
 
 ---
 
-💬 SUPPORT / MADAD CHAHIYE?
+✨ FEATURES – KYA-KYA HAI ISME?
 
-· YouTube: @dex-shyam-tech
-· WhatsApp Channel: Join Fast
-· GitHub Issues: Open an Issue
+· ✅ Auto-reply on WhatsApp
+· ✅ AI-based chat (like ChatGPT)
+· ✅ Sticker maker, meme generator
+· ✅ Group management (welcome, goodbye, anti-link)
+· ✅ YouTube & Instagram downloader
+· ✅ Weather, news, and more
+· ✅ Fully customizable
+
+🔮 Aur bhi bahut kuch – explore karo!
+
+---
+
+⚠️ WARNING – CHETAVANI!
+
+<div style="background-color: #000000; border-left: 5px solid #ff00ff; padding: 10px; border-radius: 0 15px 15px 0; box-shadow: 0 0 15px #ff00ff;">
+  <h3 style="color: #00ffff;">⚠️ DISCLAIMER</h3>
+  <p style="color: #ffffff;">
+    <b>🔴 Yeh Bot WhatsApp Inc. Se Affiliate Nahi Hai |</b><br>
+    <b>🔴 Iska Use Apni Jimmedari Par Karein |</b><br>
+    <b>🔴 Galat Istemal Se Account Ban Ho Sakta Hai</b>
+  </p>
+</div>
+
+---
+
+🌟 CONTRIBUTORS & SUPPORTERS
+
+https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&background=00000000&center=true&vCenter=true&width=500&lines=THANKS+TO+ALL+CONTRIBUTORS+%F0%9F%99%8F;SPECIAL+THANKS+TO+OUR+STAR+SUPPORTERS+%E2%AD%90
+
+<p align="center">
+  <a href="https://github.com/dexsam07/SHYAM-MD/stargazers">
+    <img src="http://reporoster.com/stars/dark/dexsam07/SHYAM-MD" alt="Stargazers Repo Roster For @dexsam07/SHYAM-MD">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/dexsam07/SHYAM-MD/network/members">
+    <img src="http://reporoster.com/forks/dark/dexsam07/SHYAM-MD" alt="Forkers Repo Roster For @dexsam07/SHYAM-MD">
+  </a>
+</p>
+
+---
+
+📢 STAY CONNECTED – UPDATES & TUTORIALS
+
+<a href="https://youtube.com/@dex-shyam-tech" target="_blank">
+  <img src="Shyam/youtube.svg" alt="YouTube" width="250"/>
+</a>
+
+<p align="center">
+  <img src="Shyam/nolove.svg" alt="NoLove" width="250"/>
+</p>
 
 ---
 
@@ -257,10 +239,7 @@ npm start
 </p>
 
 <p align="center">
-  <b>❤️ Made with Love by MR Shyam (Dex-Sam) ❤️</b>
-</p>
-
-<p align="center">
+  <b>❤️ Made with 💀 by MR Shyam (Dex-Sam) ❤️</b><br>
   <b>⭐ Agar acha laga toh GitHub par Star zaroor karein! ⭐</b>
 </p>
 
