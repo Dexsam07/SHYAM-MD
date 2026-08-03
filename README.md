@@ -1,20 +1,20 @@
-![WELLCOME](Shaban/wellcome.svg)
+![WELLCOME](Shyam/wellcome.svg)
   
 ______
 
-[![Shaban](https://raw.githubusercontent.com/dexsam07/SHYAM-MD/main/Shaban/mr.svg)](https://whatsapp.com/channel/0029VazjYjoDDmFZTZ9Ech3O)
+[![Shyam](https://raw.githubusercontent.com/dexsam07/SHYAM-MD/main/Shyam/mr.svg)](https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o)
 ___ 
 
 <p align="center">
   <a href="https://github.com/dexsam07" target="_blank">
-    <img src="./Shaban/dev-gold-mini.svg" width="300" alt="Developer — MR SHABAN (Gold 3D)">
+    <img src="./Shyam/dev-gold-mini.svg" width="300" alt="Developer — MR Shyam (Gold 3D)">
   </a>
 </p>
 
   
 <p align="center">
   <a href="https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o" target="_blank">
-    <img src="./Shaban/channel-update.svg" width="350" alt="Bot Updating — WhatsApp Channel | Join Fast">
+    <img src="./Shyam/channel-update.svg" width="350" alt="Bot Updating — WhatsApp Channel | Join Fast">
   </a>
 </p>
 
@@ -29,41 +29,41 @@ ___
 -------------
 
 <p align="center">
-<img src="Shaban/feature-bot.svg" alt="Feature Bot" width="900"/>
+<img src="Shyam/feature-bot.svg" alt="Feature Bot" width="900"/>
   
 <p align="center">
-<img src="Shaban/license.svg" alt="License" width="200"/>
+<img src="Shyam/license.svg" alt="License" width="200"/>
 
 --------------
 
 <p align="center">
-<img src="Shaban/maintenance.svg" alt="Maintenance" width="120"/>
+<img src="Shyam/maintenance.svg" alt="Maintenance" width="120"/>
 
 
  <p align="center">
   <a href="https://github.com/dexsam07/SHYAM-MD/fork" target="_blank">
-    <img src="Shaban/forkstar-holo.svg" width="180" alt="Fork Star Bot Repo"/>
+    <img src="Shyam/forkstar-holo.svg" width="180" alt="Fork Star Bot Repo"/>
   </a>
 </p>
 
 
 <p align="center">
   <a href="https://smd-pair.zone.id/" target="_blank">
-    <img src="./Shaban/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
+    <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
 -------------
 
 <p align="center">
-  <img src="./Shaban/deployment.svg" width="600" alt="SHYAM MD — News Ticker Typing">
+  <img src="./Shyam/deployment.svg" width="600" alt="SHYAM MD — News Ticker Typing">
 </p>
 
 <div align="center">
   <table>
     <tr>
       <td><a href="https://dashboard.heroku.com/new-app?template=https://github.com/dexsam07/SHYAM-MD" target="_blank"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=000000&color=0000FF"/></a></td>
-      <td><a href="https://bot-hosting.net/?aff=1335487206948864030" target="_blank"><img src="https://img.shields.io/badge/Bot-Hosting-A52A2A?style=for-the-badge&logo=firefoxbrowser&logoColor=white&labelColor=000000"/></a></td>
+      <td><a href="https://legacy.bot-hosting.net/?aff=1340584978613932053" target="_blank"><img src="https://img.shields.io/badge/Bot-Hosting-A52A2A?style=for-the-badge&logo=firefoxbrowser&logoColor=white&labelColor=000000"/></a></td>
     </tr>
     <tr>
       <td><a href="https://app.koyeb.com/deploy?name=SHYAM-MD-v6-koyeb&type=git&repository=dexsam07%2FSHYAM-MD&branch=main&builder=dockerfile&instance_type=free&regions&=was&env%5BSESSION_ID%5D=" target="_blank"><img src="https://img.shields.io/badge/KOYEB-APP-FF009D?style=for-the-badge&logo=koyeb&logoColor=white&labelColor=000000"/></a></td>
@@ -79,7 +79,7 @@ ___
 <table align="center">
   <tr>
     <td>
-      <a href="https://github.com/iTx-Sarkar/SMD-Render" target="_blank">
+      <a href="https://github.com/dexsam07/SHYAM-MD" target="_blank">
         <img alt="Deploy From Render" src="https://img.shields.io/badge/Deploy-Only%20Render%20Repo-4CAF50?style=for-the-badge&logo=render&logoColor=white"/>
       </a>
     </td>
@@ -88,7 +88,7 @@ ___
 
 -------------
 
-**_✠ FREE DEPLOYMENT OF SHABAN MD GITHUB WORKFLOW CODE NEW ADD ERROR FIXED ✠_**
+**_✠ FREE DEPLOYMENT OF SHYAM MD GITHUB WORKFLOW CODE NEW ADD ERROR FIXED ✠_**
 
 ```
 
@@ -141,8 +141,8 @@ jobs:
 
 > 🔔 Stay Connected For Updates Feature Drops And Tutorials!
 
-<a href="https://youtube.com/@mrshaban282?si=ZVANSbKM0yajAbl_" target="_blank">
-  <img src="Shaban/youtube.svg" alt="YouTube" width="250"/>
+<a href="https://youtube.com/@dex-shyam-tech" target="_blank">
+  <img src="Shyam/youtube.svg" alt="YouTube" width="250"/>
 </a>
 
 <p align="center">
@@ -172,4 +172,4 @@ jobs:
 
 
 <p align="center">
-<img src="Shaban/nolove.svg" alt="NoLove" width="250"/>
+<img src="Shyam/nolove.svg" alt="NoLove" width="250"/>
