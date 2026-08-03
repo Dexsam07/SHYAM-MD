@@ -51,14 +51,14 @@
 
 ---
 
-## ⚡ PAIRING SITES (BUTTON UPGRADED) ⚡
+## ⚡ PAIRING SITES – CLICK & CONNECT ⚡
 
-<!-- UPGRADED: Ab ye plain text nahi, balke NEON BUTTONS hain! Click karke sidha pairing site pe jao -->
+> **Ab ranking text bhi clickable buttons hain – neeche diye gaye teeno buttons ko dabao aur apna session code lo!**
 
 <p align="center">
   <!-- #1 Button -->
   <a href="https://dex-pair-ai.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/🔥_%231-FASTEST_PAIRING-00C853?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#1 Fastest Pairing"/>
+    <img src="https://img.shields.io/badge/🚀_%231-FASTEST_PAIRING-00C853?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#1 Fastest Pairing"/>
   </a>
   <br>
   <a href="https://dex-pair-ai.onrender.com/" target="_blank">
@@ -237,7 +237,7 @@ Pairing Sites 3 buttons upar diye hain (neon style) – #1 fastest, #2 normal, #
 Deployment Heroku, Koyeb, Railway, Bot-Hosting, Render – sab pe deploy kar sakte ho
 GitHub Workflow Free auto-deploy ke liye YAML code diya hai – error fixed
 Warning WhatsApp official nahi hai, misuse mat karo, account ban ho sakta hai
-Owner/Creator MR Shyam (Dex-Sam) – YouTube par tutorials milte hain
+Owner/Creator MR Shyam (Midnight-Dex) – YouTube par tutorials milte hain
 Style Hacker aesthetic – but it's just for style, no real hacking 😉
 
 ---
@@ -275,7 +275,7 @@ npm start
 </p>
 
 <p align="center">
-  <b>❤️ Made with 💀 by MR Shyam (Dex-Sam) ❤️</b><br>
+  <b>❤️ Made with 💀 by MR Shyam (Midnight-Dex) ❤️</b><br>
   <i>“Code is poetry, and we are the hackers of our own destiny.”</i>
 </p>
 
