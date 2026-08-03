@@ -53,22 +53,25 @@
 
 ## ⚡ PAIRING SITES (SPEED RANKED) ⚡
 
+<!-- #1 – Fastest Pairing -->
 <p align="center">
-  <b>#1 – Fastest Pairing</b><br>
+  <a href="https://dex-pair-ai.onrender.com/" target="_blank" style="display:inline-block; background:#0d0d2b; color:#00ffff; padding:10px 35px; border-radius:30px; border:2px solid #00ffff; text-decoration:none; font-weight:bold; font-size:16px; box-shadow:0 0 25px #00ffff88; margin-bottom:12px; transition:0.3s;">#1 – Fastest Pairing</a><br>
   <a href="https://dex-pair-ai.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
+<!-- #2 – Normal Pairing -->
 <p align="center">
-  <b>#2 – Normal Pairing (Session Code)</b><br>
+  <a href="https://dex-pairing-session.onrender.com/" target="_blank" style="display:inline-block; background:#0d0d2b; color:#ff00ff; padding:10px 35px; border-radius:30px; border:2px solid #ff00ff; text-decoration:none; font-weight:bold; font-size:16px; box-shadow:0 0 25px #ff00ff88; margin-bottom:12px; transition:0.3s;">#2 – Normal Pairing (Session Code)</a><br>
   <a href="https://dex-pairing-session.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
+<!-- #3 – Mini Bot Single Pairing -->
 <p align="center">
-  <b>#3 – Mini Bot Single Pairing</b><br>
+  <a href="https://the-dex-mini.onrender.com/" target="_blank" style="display:inline-block; background:#0d0d2b; color:#00ff7f; padding:10px 35px; border-radius:30px; border:2px solid #00ff7f; text-decoration:none; font-weight:bold; font-size:16px; box-shadow:0 0 25px #00ff7f88; margin-bottom:12px; transition:0.3s;">#3 – Mini Bot Single Pairing</a><br>
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
