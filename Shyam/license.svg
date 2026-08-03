@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">Digital Premium Badge - Project Status, Version, License with GitHub Stamp</title>
+  <desc id="desc">Neon framed card with animated gradient, shine, active blinking green dot, and a GitHub gold stamp logo.</desc>
+
+  <defs>
+    <!-- Holographic neon gradient -->
+    <linearGradient id="holo" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff"/>
+      <stop offset="25%" stop-color="#00ffff"/>
+      <stop offset="50%" stop-color="#00ff87"/>
+      <stop offset="75%" stop-color="#ffff00"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1,0" to="1,0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Soft white sweep -->
+    <linearGradient id="shine" x1="-100%" y1="0" x2="200%" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="50%" stop-color="white" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1,0" to="1,0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Gold gradient for stamp -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%"  stop-color="#FFD700"/>
+      <stop offset="35%" stop-color="#FFA500"/>
+      <stop offset="70%" stop-color="#FFFACD"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1,0" to="1,0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="b1"/>
+      <feColorMatrix in="b1" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 1
+                0 0 0 0 1
+                0 0 0 0.9 0" result="c1"/>
+      <feMerge>
+        <feMergeNode in="c1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Dotted divider pattern -->
+    <pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="3" r="1" fill="#ffffff" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- Card background with neon frame -->
+  <rect x="10" y="10" width="500" height="100" rx="18" fill="#0A0A0A" stroke="url(#holo)" stroke-width="3" filter="url(#shadow)">
+    <animate attributeName="stroke-width" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <!-- Shine overlay -->
+  <rect x="10" y="10" width="500" height="100" rx="18" fill="url(#shine)"/>
+
+  <!-- Left info column -->
+  <g transform="translate(26,28)" font-family="Segoe UI, Inter, system-ui, Arial, sans-serif">
+    <!-- Row 1: Project Status + Active dot -->
+    <g>
+      <text x="0" y="0" dy="0.9em" font-size="16" font-weight="800" fill="url(#holo)" filter="url(#glow)">STATUS PROJECT</text>
+      <!-- Blinking green dot -->
+      <g transform="translate(170,10)">
+        <circle cx="0" cy="0" r="6" fill="#27EF6E">
+          <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="6;5;6" dur="1.2s" repeatCount="indefinite"/>
+        </circle>
+        <!-- subtle halo -->
+        <circle cx="0" cy="0" r="10" fill="#27EF6E" opacity="0.25">
+          <animate attributeName="opacity" values="0.25;0.05;0.25" dur="1.2s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="10;12;10" dur="1.2s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+      <text x="186" y="0" dy="0.9em" font-size="16" font-weight="900" fill="#E8FFE8">Active</text>
+    </g>
+
+    <!-- dotted divider -->
+    <rect x="0" y="28" width="320" height="2" fill="url(#dots)"/>
+
+    <!-- Row 2: Version -->
+    <g transform="translate(0,33)"> <!-- Updated Y position from 38 to 33 -->
+      <text x="0" y="0" dy="0.9em" font-size="15" font-weight="800" fill="url(#holo)" filter="url(#glow)">VERSION</text>
+      <text x="100" y="0" dy="0.9em" font-size="15" font-weight="900" fill="#FFFFFF">V.1 Neon Edition</text>
+    </g>
+
+    <!-- Row 3: License -->
+    <g transform="translate(0,61)"> <!-- Updated Y position from 66 to 61 -->
+      <text x="0" y="0" dy="0.9em" font-size="15" font-weight="800" fill="url(#holo)" filter="url(#glow)">LICENSE</text>
+      <text x="100" y="0" dy="0.9em" font-size="15" font-weight="900" fill="#FFFFFF">BSD 3-Clause</text>
+    </g>
+  </g>
+
+  <!-- Right: GitHub Gold Stamp -->
+  <g transform="translate(400,22)">
+    <!-- outer seal -->
+    <circle cx="50" cy="38" r="34" fill="#111" stroke="url(#gold)" stroke-width="3"/>
+    <!-- inner ring -->
+    <circle cx="50" cy="38" r="28" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.9"/>
+    <!-- rays -->
+    <g opacity="0.8">
+      <path d="M50 0 L50 14" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M50 62 L50 76" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M12 38 L26 38" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M74 38 L88 38" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M21 17 L31 27" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M69 49 L79 59" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M21 59 L31 49" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M69 27 L79 17" stroke="url(#gold)" stroke-width="2"/>
+    </g>
+
+    <!-- Octocat mark (silhouette on gold coin) -->
+    <circle cx="50" cy="38" r="20" fill="url(#gold)"/>
+    <path d="M50 28c-6 0-10 4-10 10c0 4.4 2.8 8.2 6.7 9.5c0.5 0.1 0.7-0.2 0.7-0.5
+             c0-0.2 0-0.9 0-1.7c-2.7 0.6-3.3-1.3-3.3-1.3c-0.5-1.2-1.2-1.5-1.2-1.5
+             c-1-0.6 0.1-0.7 0.1-0.7c1.1 0.1 1.6 1.1 1.6 1.1c1 1.6 2.6 1.1 3.2 0.9
+             c0.1-0.7 0.4-1.1 0.6-1.3c-2.1-0.2-4.3-1-4.3-4.8c0-1 0.4-2 1-2.6
+             c-0.1-0.2-0.5-1.3 0.1-2.6c0 0 0.8-0.2 2.7 1c0.8-0.2 1.7-0.3 2.6-0.3
+             s1.8 0.1 2.6 0.3c1.8-1.2 2.7-1 2.7-1c0.6 1.3 0.2 2.4 0.1 2.6
+             c0.7 0.7 1 1.6 1 2.6c0 3.8-2.2 4.5-4.3 4.8c0.3 0.3 0.6 0.9 0.6 1.9
+             c0 1.4 0 2.6 0 3c0 0.2 0.2 0.6 0.7 0.5C57.3 46.7 60 42.9 60 38
+             c0-6-4-10-10-10z" fill="#000" opacity="0.95"/>
+
+    <!-- "GitHub" text -->
+    <text x="50" y="70" text-anchor="middle" font-family="Segoe UI, Inter, system-ui, Arial, sans-serif"
+          font-size="10" font-weight="800" fill="url(#gold)">GitHub</text>
+
+    <!-- subtle breathe -->
+    <animateTransform attributeName="transform" type="translate" values="400,22; 400,21; 400,22" dur="2.5s" repeatCount="indefinite"/>
+  </g>
+</svg>

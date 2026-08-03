@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="32" viewBox="0 0 220 40">
+  <defs>
+    <!-- Animated gradient for frame & text (front colors only) -->
+    <linearGradient id="frontGrad" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff"/>
+      <stop offset="25%" stop-color="#00ffff"/>
+      <stop offset="50%" stop-color="#00ff87"/>
+      <stop offset="75%" stop-color="#ffff00"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="-1,0" to="1,0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Soft moving shine -->
+    <linearGradient id="shine" x1="-100%" y1="0" x2="200%" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="50%" stop-color="white" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="-1,0" to="1,0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Scale wrapper -->
+  <g transform="scale(0.5238,0.5)">
+    <!-- Background -->
+    <rect x="10" y="10" width="400" height="60" rx="16" fill="#000000"
+          stroke="url(#frontGrad)" stroke-width="3">
+      <animate attributeName="stroke-width" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Shine -->
+    <rect x="10" y="10" width="400" height="60" rx="16" fill="url(#shine)"/>
+
+    <!-- Icon -->
+    <g transform="translate(28,25)" fill="none" stroke="url(#frontGrad)" stroke-width="3">
+      <path d="M18 10 h10 a10 10 0 0 1 0 20 h-10"/>
+      <path d="M14 30 h-10 a10 10 0 0 1 0-20 h10"/>
+      <path d="M14 20 h10"/>
+      <animateTransform attributeName="transform" type="translate"
+                        values="28,25; 28,24; 28,25" dur="2.2s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Title -->
+    <text x="200" y="39" text-anchor="middle"
+          font-family="Segoe UI, Inter, system-ui, Arial, sans-serif"
+          font-size="22" font-weight="900"
+          fill="url(#frontGrad)" letter-spacing="1.5">
+      PAIR_CODE
+    </text>
+
+    <!-- Subtitle -->
+    <text x="200" y="58" text-anchor="middle"
+          font-family="Consolas, 'Courier New', monospace"
+          font-size="13" font-weight="700"
+          fill="url(#frontGrad)" letter-spacing="1">
+      Device Session ID
+    </text>
+  </g>
+</svg>

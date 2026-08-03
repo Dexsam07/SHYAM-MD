@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="80" viewBox="0 0 520 100">
+  <defs>
+    <!-- Gradient -->
+    <linearGradient id="frontGrad" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff"/>
+      <stop offset="25%" stop-color="#00ffff"/>
+      <stop offset="50%" stop-color="#00ff87"/>
+      <stop offset="75%" stop-color="#ffff00"/>
+      <stop offset="100%" stop-color="#ff00ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="-1,0" to="1,0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="0 0 0 0  0
+                0 0 0 0  1
+                0 0 0 0  1
+                0 0 0 0.8 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="10" y="10" width="500" height="80" rx="20" fill="black" stroke="url(#frontGrad)" stroke-width="3">
+    <animate attributeName="stroke-width" values="3;6;3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Text -->
+  <text x="50%" y="60%" text-anchor="middle"
+        font-family="Orbitron, Courier New, monospace"
+        font-size="30" font-weight="900"
+        fill="url(#frontGrad)" filter="url(#neonGlow)" letter-spacing="2">
+     FORK ★ STAR REPO
+    <animateTransform attributeName="transform" type="translate"
+                      values="0,0; 0,-2; 0,0" dur="3s" repeatCount="indefinite"/>
+  </text>
+</svg>

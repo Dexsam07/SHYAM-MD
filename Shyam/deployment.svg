@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="60" viewBox="0 0 600 60">
+  <defs>
+    <!-- Neon green gradient -->
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF00"/>
+      <stop offset="100%" stop-color="#7CFF7C"/>
+    </linearGradient>
+
+    <!-- (NEW) Rainbow-ish gradient for background dots -->
+    <linearGradient id="dotsGrad" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%"   stop-color="#00ffa3"/>
+      <stop offset="50%"  stop-color="#00c3ff"/>
+      <stop offset="100%" stop-color="#7cff00"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        from="-1,0" to="1,0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- (NEW) Clip so dots stay inside the rounded ticker box -->
+    <clipPath id="innerBox">
+      <rect x="5" y="5" width="590" height="50" rx="10"/>
+    </clipPath>
+
+    <!-- Reusable typing mask: type (0->520) then erase (520->0) -->
+    <!-- We'll instantiate it per-line via timing; rectangles below are the masks -->
+    <clipPath id="clip1"><rect id="r1" x="40" y="12" width="0" height="36"/></clipPath>
+    <clipPath id="clip2"><rect id="r2" x="40" y="12" width="0" height="36"/></clipPath>
+    <clipPath id="clip3"><rect id="r3" x="40" y="12" width="0" height="36"/></clipPath>
+    <clipPath id="clip4"><rect id="r4" x="40" y="12" width="0" height="36"/></clipPath>
+    <clipPath id="clip5"><rect id="r5" x="40" y="12" width="0" height="36"/></clipPath>
+
+    <!-- Cursor gradient -->
+    <linearGradient id="cursorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00FF00"/>
+      <stop offset="100%" stop-color="#7CFF7C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ticker bar -->
+  <rect x="5" y="5" width="590" height="50" rx="10" fill="#000" stroke="url(#neon)" stroke-width="2"/>
+
+  <!-- (NEW) Background with LIVE colorful dots (inside box only) -->
+  <g clip-path="url(#innerBox)" opacity="0.65">
+    <!-- Layer 1: smooth gliding dots -->
+    <circle cx="30"  cy="18" r="2.5" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="30;590;30" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="38" r="2.8" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="120;590;120" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.4s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="25" r="2.2" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="220;590;220" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="310" cy="15" r="2.6" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="310;590;310" dur="10.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.95;0.4" dur="2.3s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="33" r="2.4" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="400;590;400" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.1s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="22" r="2.5" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="520;590;520" dur="8.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.9s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Layer 2: tiny fast sparkles -->
+    <circle cx="80"  cy="30" r="1.7" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="80;590;80" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="42" r="1.6" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="260;590;260" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="1.1s" begin="0.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="20" r="1.8" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="350;590;350" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="40" r="1.5" fill="url(#dotsGrad)">
+      <animate attributeName="cx" values="480;590;480" dur="6.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="1s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- subtle left tag -->
+  <rect x="12" y="18" width="16" height="24" rx="4" fill="url(#neon)">
+    <animate attributeName="opacity" values="1;0.6;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Line 1 (0s start; repeats every 30s) -->
+  <g clip-path="url(#clip1)">
+    <text x="40" y="40" fill="url(#neon)" font-family="Fira Code, Consolas, monospace" font-size="22" font-weight="700">
+      👇 SHYAM MD DEPLOYMENT 👇
+    </text>
+  </g>
+  <animate xlink:href="#r1" attributeName="width" values="0;520;0" dur="6s" begin="0s;30s;60s" repeatCount="1" fill="freeze"/>
+  <rect id="c1" x="40" y="18" width="2" height="28" fill="url(#cursorGrad)" opacity="0">
+    <animate attributeName="x" values="40;560;40" dur="6s" begin="0s;30s;60s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.7s" begin="0s;30s;60s" repeatCount="9"/>
+  </rect>
+
+  <!-- Line 2 (starts at 6s; repeats at 36s, 66s) -->
+  <g clip-path="url(#clip2)">
+    <text x="40" y="40" fill="url(#neon)" font-family="Fira Code, Consolas, monospace" font-size="22" font-weight="700">
+     🕹️ HEROKU RENDER RAILWAY PANEL VPS CLOUD 🕹️
+    </text>
+  </g>
+  <animate xlink:href="#r2" attributeName="width" values="0;520;0" dur="6s" begin="6s;36s;66s" repeatCount="1" fill="freeze"/>
+  <rect id="c2" x="40" y="18" width="2" height="28" fill="url(#cursorGrad)" opacity="0">
+    <animate attributeName="x" values="40;560;40" dur="6s" begin="6s;36s;66s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.7s" begin="6s;36s;66s" repeatCount="9"/>
+  </rect>
+
+  <!-- Line 3 (starts at 12s) -->
+  <g clip-path="url(#clip3)">
+    <text x="40" y="40" fill="url(#neon)" font-family="Fira Code, Consolas, monospace" font-size="22" font-weight="700">
+     🛜 LIGHTWEIGHT SMOTHLEY WORKKING 🛜
+    </text>
+  </g>
+  <animate xlink:href="#r3" attributeName="width" values="0;520;0" dur="6s" begin="12s;42s;72s" repeatCount="1" fill="freeze"/>
+  <rect id="c3" x="40" y="18" width="2" height="28" fill="url(#cursorGrad)" opacity="0">
+    <animate attributeName="x" values="40;560;40" dur="6s" begin="12s;42s;72s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.7s" begin="12s;42s;72s" repeatCount="9"/>
+  </rect>
+
+  <!-- Line 4 (starts at 18s) -->
+  <g clip-path="url(#clip4)">
+    <text x="40" y="40" fill="url(#neon)" font-family="Fira Code, Consolas, monospace" font-size="22" font-weight="700">
+    🔁 WORKING 24/7 🔁
+    </text>
+  </g>
+  <animate xlink:href="#r4" attributeName="width" values="0;520;0" dur="6s" begin="18s;48s;78s" repeatCount="1" fill="freeze"/>
+  <rect id="c4" x="40" y="18" width="2" height="28" fill="url(#cursorGrad)" opacity="0">
+    <animate attributeName="x" values="40;560;40" dur="6s" begin="18s;48s;78s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.7s" begin="18s;48s;78s" repeatCount="9"/>
+  </rect>
+
+  <!-- Line 5 (starts at 24s) -->
+  <g clip-path="url(#clip5)">
+    <text x="40" y="40" fill="url(#neon)" font-family="Fira Code, Consolas, monospace" font-size="22" font-weight="700">
+     ⏬ ENJOYING EVERYONE ⏬
+    </text>
+  </g>
+  <animate xlink:href="#r5" attributeName="width" values="0;520;0" dur="6s" begin="24s;54s;84s" repeatCount="1" fill="freeze"/>
+  <rect id="c5" x="40" y="18" width="2" height="28" fill="url(#cursorGrad)" opacity="0">
+    <animate attributeName="x" values="40;560;40" dur="6s" begin="24s;54s;84s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.7s" begin="24s;54s;84s" repeatCount="9"/>
+  </rect>
+
+  <!-- Master clock (keeps the whole 30s cycle repeating forever) -->
+  <rect x="-1" y="-1" width="1" height="1" fill="none">
+    <animate attributeName="width" values="1;1" dur="30s" repeatCount="indefinite"/>
+  </rect>
+</svg>
+                           
