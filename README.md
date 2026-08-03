@@ -50,7 +50,7 @@ ___
   </a>
 </p>
 
-<!-- PAIRING SITES WITH RANKING -->
+<!-- PAIRING SITES WITH RANKING (FIXED & INTACT) -->
 <p align="center">
   <b><i>⚡ PAIRING SITES (SPEED RANKED) ⚡</i></b>
 </p>
@@ -192,10 +192,12 @@ jobs:
 
 🧑‍💻 CONTRIBUTORS / योगदानकर्ता
 
+<!-- ✅ YEH LINK AB BILKUL FIXED HAI – COPY KARO AUR PASTE KARO ✅ -->
+
 <div style="margin-top:20px">
-
-https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&background=00000000&center=true&vCenter=true&width=500&lines=THANKS+TO+ALL+CONTRIBUTORS+%F0%9F%99%8F;SPECIAL+THANKS+TO+OUR+STAR+SUPPORTERS+%E2%AD%90
-
+  <a href="https://github.com/dexsam07/SHYAM-MD/graphs/contributors">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&background=00000000&center=true&vCenter=true&width=500&lines=THANKS+TO+ALL+CONTRIBUTORS+%F0%9F%99%8F;SPECIAL+THANKS+TO+OUR+STAR+SUPPORTERS+%E2%AD%90" alt="Contributors Typing SVG"/>
+  </a>
 </div>
 
 <p align="center">
