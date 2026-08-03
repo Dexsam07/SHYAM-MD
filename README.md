@@ -2,85 +2,119 @@
   <img src="Shyam/wellcome.svg" width="100%" alt="Welcome"/>
 </p>
 
-______
-
-[![Shyam](https://raw.githubusercontent.com/dexsam07/SHYAM-MD/main/Shyam/mr.svg)](https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o)
-___ 
-
+<!-- ==================== TOP NAVIGATION ==================== -->
 <p align="center">
-  <a href="https://github.com/dexsam07" target="_blank">
+  <b>
+    <a href="#about">📖 ABOUT</a>  •  
+    <a href="#deployment">☁️ DEPLOY</a>  •  
+    <a href="#pairing">⚡ PAIRING</a>  •  
+    <a href="#setup">💻 SETUP</a>  •  
+    <a href="#support">📡 SUPPORT</a>
+  </b>
+</p>
+
+---
+
+<!-- ==================== HEADER & BADGES ==================== -->
+<p align="center">
+  <a href="https://github.com/dexsam07/SHYAM-MD/fork" target="_blank">
     <img src="./Shyam/dev-gold-mini.svg" width="300" alt="Developer — MR Shyam (Gold 3D)">
   </a>
 </p>
 
-  
 <p align="center">
   <a href="https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o" target="_blank">
     <img src="./Shyam/channel-update.svg" width="350" alt="Bot Updating — WhatsApp Channel | Join Fast">
   </a>
 </p>
 
----------
+<p align="center">
+  <!-- Standard Professional Badges -->
+  <img src="https://img.shields.io/github/repo-size/dexsam07/SHYAM-MD?style=for-the-badge&logo=github&color=blue" />
+  <img src="https://img.shields.io/github/issues/dexsam07/SHYAM-MD?style=for-the-badge&logo=github&color=red" />
+  <img src="https://img.shields.io/github/forks/dexsam07/SHYAM-MD?style=for-the-badge&logo=github&color=green" />
+  <img src="https://img.shields.io/github/stars/dexsam07/SHYAM-MD?style=for-the-badge&logo=github&color=yellow" />
+  <img src="https://img.shields.io/github/license/dexsam07/SHYAM-MD?style=for-the-badge&logo=github&color=orange" />
+</p>
 
 <p align="center">
-<a href="https://github.com/dexsam07/SHYAM-MD"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=JavaScript&style=square&color=darkpink"></a> &nbsp;
+  <a href="https://github.com/dexsam07/SHYAM-MD"><img title="PUBLIC-BOT" src="https://img.shields.io/static/v1?label=Language&message=JavaScript&style=square&color=darkpink"></a> &nbsp;
   <img src="https://komarev.com/ghpvc/?username=SHYAM-MD&label=VIEWS&style=square&color=blue" />
 </p>
 
+---
 
--------------
+<!-- ==================== ABOUT SECTION ==================== -->
+## 📖 ABOUT / परिचय {#about}
+
+**SHYAM-MD** ek **Next-Gen WhatsApp Bot** hai jo **Node.js** mein likha gaya hai. Yeh bot fully automatic replies, AI chat, group management, aur bahut saare cool features ke saath aata hai. 
+
+> 🔥 **Khaasiyat:** Multi-Device support, 24/7 online, aur bilkul **Free** (open-source). Isko deploy karke apna personal WhatsApp assistant banao!
+
+---
+
+## ✨ FEATURES / खूबियाँ
 
 <p align="center">
 <img src="Shyam/feature-bot.svg" alt="Feature Bot" width="900"/>
 </p>
-  
+
 <p align="center">
 <img src="Shyam/license.svg" alt="License" width="200"/>
 </p>
-
---------------
 
 <p align="center">
 <img src="Shyam/maintenance.svg" alt="Maintenance" width="120"/>
 </p>
 
- <p align="center">
+---
+
+<!-- ==================== PAIRING SECTION ==================== -->
+## ⚡ PAIRING SITES (SPEED RANKED) {#pairing}
+
+<p align="center">
+  <b><i>🔑 Apni Session ID (Pair Code) Generate Karne Ke Liye Neeche Diye Gaye Links Mein Se Kisi Ek Par Click Karein</i></b>
+</p>
+
+<p align="center">
   <a href="https://github.com/dexsam07/SHYAM-MD/fork" target="_blank">
     <img src="Shyam/forkstar-holo.svg" width="180" alt="Fork Star Bot Repo"/>
   </a>
 </p>
 
-<!-- PAIRING SITES WITH RANKING (FIXED & INTACT) -->
-<p align="center">
-  <b><i>⚡ PAIRING SITES (SPEED RANKED) ⚡</i></b>
-</p>
+<br>
 
 <p align="center">
-  <b>#1 – Fastest Pairing</b><br>
+  <b>🥇 #1 – Fastest Pairing (Recommended)</b><br>
   <a href="https://dex-pair-ai.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
 <p align="center">
-  <b>#2 – Normal Pairing (Session Code)</b><br>
+  <b>🥈 #2 – Normal Pairing (Session Code)</b><br>
   <a href="https://dex-pairing-session.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
 <p align="center">
-  <b>#3 – Mini Bot Single Pairing</b><br>
+  <b>🥉 #3 – Mini Bot Single Pairing</b><br>
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
--------------
+---
+
+<!-- ==================== DEPLOYMENT SECTION ==================== -->
+## ☁️ DEPLOYMENT / डिप्लॉयमेंट {#deployment}
 
 <p align="center">
   <img src="./Shyam/deployment.svg" width="600" alt="SHYAM MD — News Ticker Typing">
 </p>
+
+### 🚀 One-Click Deploy (Platforms)
 
 <div align="center">
   <table>
@@ -109,11 +143,11 @@ ___
   </tr>
 </table>  
 
--------------
+---
 
-## 🧨 **FREE DEPLOYMENT – GITHUB WORKFLOW (ERROR FIXED)** 🧨
+## 🧨 FREE DEPLOYMENT – GITHUB WORKFLOW (ERROR FIXED)
 
-> **Yeh code apne `.github/workflows/node.js.yml` mein daalo – GitHub Actions automatically bot ko deploy karega!**
+> **🔥 Yeh Code Copy Karo aur Apne Repo Mein `.github/workflows/node.js.yml` File Banao. GitHub Actions Bot Ko Automatically Deploy Karega!**
 
 ```yaml
 name: Node.js CI
@@ -157,11 +191,13 @@ jobs:
 
 ---
 
+<!-- ==================== DIVIDER ==================== -->
+
 <p align="center">
   <img src="https://i.imgur.com/LyHic3i.gif" alt="divider"/>
 </p>
 
-🔔 STAY CONNECTED – UPDATES, FEATURES & TUTORIALS
+🔔 STAY CONNECTED – UPDATES & TUTORIALS
 
 <a href="https://youtube.com/@dex-shyam-tech" target="_blank">
   <img src="Shyam/youtube.svg" alt="YouTube" width="250"/>
@@ -173,8 +209,11 @@ jobs:
 
 ---
 
-⚠️ WARNING / चेतावनी !
+<!-- ==================== WARNING / DISCLAIMER ==================== -->
 
+<details>
+<summary><b>⚠️ WARNING / चेतावनी (Click to Expand)</b></summary>
+<br>
 <div style="background-color: #000000; border-left: 5px solid #ff00ff; padding: 10px; border-radius: 0 15px 15px 0; box-shadow: 0 0 15px #ff00ff;">
   <h3 style="color: #00ffff; font-family: 'Orbitron', sans-serif;">⚠️ DISCLAIMER</h3>
   <p style="color: #ffffff;">
@@ -183,16 +222,13 @@ jobs:
     <b>🔴 Galat Istemal Se Account Ban Ho Sakta Hai</b>
   </p>
 </div>
+</details>
 
 ---
 
-<p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%" alt="divider"/>
-</p>
+<!-- ==================== CONTRIBUTORS ==================== -->
 
-🧑‍💻 CONTRIBUTORS / योगदानकर्ता
-
-<!-- ✅ YEH LINK AB BILKUL FIXED HAI – COPY KARO AUR PASTE KARO ✅ -->
+🧑‍💻 CONTRIBUTORS / অবদানকারী
 
 <div style="margin-top:20px">
   <a href="https://github.com/dexsam07/SHYAM-MD/graphs/contributors">
@@ -218,6 +254,8 @@ jobs:
 
 ---
 
+<!-- ==================== QUICK OVERVIEW TABLE ==================== -->
+
 🕶️ HACKER-STYLE OVERVIEW – EK NAZAR MEIN
 
 Topic Hinglish Me Samjho
@@ -232,7 +270,9 @@ Style Hacker aesthetic – but it's just for style, no real hacking 😉
 
 ---
 
-💻 LOCAL SETUP – APNE PC PE CHALAYEIN
+<!-- ==================== SETUP / INSTALLATION ==================== -->
+
+💻 LOCAL SETUP – APNE PC PE CHALAYEIN {#setup}
 
 ```bash
 # 1. Repo clone karo
@@ -252,13 +292,18 @@ npm start
 
 ---
 
-📡 SUPPORT / MADAD CHAHIYE?
+<!-- ==================== SUPPORT ==================== -->
 
-· YouTube: @dex-shyam-tech – Tutorials & Updates
-· WhatsApp Channel: Join Fast – Latest News
-· GitHub Issues: Open an Issue – Bug Report
+📡 SUPPORT / MADAD CHAHIYE? {#support}
+
+Platform Link Purpose
+YouTube @dex-shyam-tech Tutorials & Updates
+WhatsApp Channel Join Fast Latest News & Bot Status
+GitHub Issues Open an Issue Bug Report / Feature Request
 
 ---
+
+<!-- ==================== FOOTER ==================== -->
 
 <p align="center">
   <img src="https://i.imgur.com/LyHic3i.gif" alt="divider"/>
