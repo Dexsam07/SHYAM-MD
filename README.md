@@ -51,27 +51,38 @@
 
 ---
 
-## ⚡ PAIRING SITES (SPEED RANKED) ⚡
+## ⚡ PAIRING SITES (BUTTON UPGRADED) ⚡
 
-<!-- #1 – Fastest Pairing -->
+<!-- UPGRADED: Ab ye plain text nahi, balke NEON BUTTONS hain! Click karke sidha pairing site pe jao -->
+
 <p align="center">
-  <a href="https://dex-pair-ai.onrender.com/" target="_blank" style="display:inline-block; background:#0d0d2b; color:#00ffff; padding:10px 35px; border-radius:30px; border:2px solid #00ffff; text-decoration:none; font-weight:bold; font-size:16px; box-shadow:0 0 25px #00ffff88; margin-bottom:12px; transition:0.3s;">#1 – Fastest Pairing</a><br>
+  <!-- #1 Button -->
+  <a href="https://dex-pair-ai.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/🔥_%231-FASTEST_PAIRING-00C853?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#1 Fastest Pairing"/>
+  </a>
+  <br>
   <a href="https://dex-pair-ai.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
-<!-- #2 – Normal Pairing -->
 <p align="center">
-  <a href="https://dex-pairing-session.onrender.com/" target="_blank" style="display:inline-block; background:#0d0d2b; color:#ff00ff; padding:10px 35px; border-radius:30px; border:2px solid #ff00ff; text-decoration:none; font-weight:bold; font-size:16px; box-shadow:0 0 25px #ff00ff88; margin-bottom:12px; transition:0.3s;">#2 – Normal Pairing (Session Code)</a><br>
+  <!-- #2 Button -->
+  <a href="https://dex-pairing-session.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#2 Normal Pairing"/>
+  </a>
+  <br>
   <a href="https://dex-pairing-session.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
 
-<!-- #3 – Mini Bot Single Pairing -->
 <p align="center">
-  <a href="https://the-dex-mini.onrender.com/" target="_blank" style="display:inline-block; background:#0d0d2b; color:#00ff7f; padding:10px 35px; border-radius:30px; border:2px solid #00ff7f; text-decoration:none; font-weight:bold; font-size:16px; box-shadow:0 0 25px #00ff7f88; margin-bottom:12px; transition:0.3s;">#3 – Mini Bot Single Pairing</a><br>
+  <!-- #3 Button -->
+  <a href="https://the-dex-mini.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/🤖_%233-MINI_BOT-FF9800?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Mini Bot"/>
+  </a>
+  <br>
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
@@ -222,7 +233,7 @@ jobs:
 Topic Hinglish Me Samjho
 Bot Ka Naam SHYAM-MD – WhatsApp Auto-Reply Bot
 Language JavaScript (Node.js) – Full Stack
-Pairing Sites 3 links diye hain upar (speed rank ke saath) – #1 fastest, #2 normal, #3 mini
+Pairing Sites 3 buttons upar diye hain (neon style) – #1 fastest, #2 normal, #3 mini
 Deployment Heroku, Koyeb, Railway, Bot-Hosting, Render – sab pe deploy kar sakte ho
 GitHub Workflow Free auto-deploy ke liye YAML code diya hai – error fixed
 Warning WhatsApp official nahi hai, misuse mat karo, account ban ho sakta hai
@@ -247,7 +258,7 @@ npm install
 npm start
 ```
 
-📌 Note: Pairing code ke liye upar diye gaye teen (3) links mein se kisi ek par jaake session ID generate karo aur bot mein daalo.
+📌 Note: Pairing code ke liye upar diye gaye teen (3) buttons mein se kisi ek par click karo, site open karo aur session ID generate karke bot mein daalo.
 
 ---
 
