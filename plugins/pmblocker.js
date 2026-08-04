@@ -1,16 +1,12 @@
-const fs = require('fs');
-const store = require('../lib/lightweight_store');
-
+import fs from 'fs';
+import store from '../lib/lightweight_store.js';
 const MONGO_URL = process.env.MONGO_URL;
 const POSTGRES_URL = process.env.POSTGRES_URL;
 const MYSQL_URL = process.env.MYSQL_URL;
 const SQLITE_URL = process.env.DB_URL;
 const HAS_DB = !!(MONGO_URL || POSTGRES_URL || MYSQL_URL || SQLITE_URL);
-
 const PMBLOCKER_PATH = './data/pmblocker.json';
-
 const DEFAULT_MESSAGE = '⚠️ Direct messages are blocked!\nYou cannot DM this bot. Please contact the owner in group chats only.';
-
 async function readState() {
     try {
         if (HAS_DB) {
@@ -20,11 +16,12 @@ async function readState() {
             }
             return {
                 enabled: !!data.enabled,
-                message: typeof data.message === 'string' && data.message.trim() 
-                    ? data.message 
+                message: typeof data.message === 'string' && data.message.trim()
+                    ? data.message
                     : DEFAULT_MESSAGE
             };
-        } else {
+        }
+        else {
             if (!fs.existsSync(PMBLOCKER_PATH)) {
                 return { enabled: false, message: DEFAULT_MESSAGE };
             }
@@ -32,16 +29,16 @@ async function readState() {
             const data = JSON.parse(raw || '{}');
             return {
                 enabled: !!data.enabled,
-                message: typeof data.message === 'string' && data.message.trim() 
-                    ? data.message 
+                message: typeof data.message === 'string' && data.message.trim()
+                    ? data.message
                     : DEFAULT_MESSAGE
             };
         }
-    } catch {
+    }
+    catch {
         return { enabled: false, message: DEFAULT_MESSAGE };
     }
 }
-
 async function writeState(enabled, message) {
     try {
         const current = await readState();
@@ -49,59 +46,54 @@ async function writeState(enabled, message) {
             enabled: !!enabled,
             message: typeof message === 'string' && message.trim() ? message : current.message
         };
-        
         if (HAS_DB) {
             await store.saveSetting('global', 'pmblocker', payload);
-        } else {
+        }
+        else {
             if (!fs.existsSync('./data')) {
                 fs.mkdirSync('./data', { recursive: true });
             }
             fs.writeFileSync(PMBLOCKER_PATH, JSON.stringify(payload, null, 2));
         }
-    } catch (e) {
+    }
+    catch (e) {
         console.error('Error writing PM blocker state:', e);
     }
 }
-
-module.exports = {
+export default {
     command: 'pmblocker',
     aliases: ['pmblock', 'blockpm', 'antipm'],
     category: 'owner',
     description: 'Block private messages and auto-block users who DM the bot',
     usage: '.pmblocker <on|off|status|setmsg>',
     ownerOnly: true,
-
-    async handler(sock, message, args, context = {}) {
+    async handler(sock, message, args, context) {
         const chatId = context.chatId || message.key.remoteJid;
         const state = await readState();
-        
         const sub = args[0]?.toLowerCase();
         const rest = args.slice(1);
-
         if (!sub || !['on', 'off', 'status', 'setmsg'].includes(sub)) {
             await sock.sendMessage(chatId, {
                 text: `📵 *PM BLOCKER*\n\n` +
-                      `*Storage:* ${HAS_DB ? 'Database' : 'File System'}\n\n` +
-                      `*Commands:*\n` +
-                      `• \`.pmblocker on\` - Enable DM blocking\n` +
-                      `• \`.pmblocker off\` - Disable DM blocking\n` +
-                      `• \`.pmblocker status\` - Current status\n` +
-                      `• \`.pmblocker setmsg <text>\` - Set warning message\n\n` +
-                      `*Current Status:* ${state.enabled ? '✅ ENABLED' : '❌ DISABLED'}`
+                    `*Storage:* ${HAS_DB ? 'Database' : 'File System'}\n\n` +
+                    `*Commands:*\n` +
+                    `• \`.pmblocker on\` - Enable DM blocking\n` +
+                    `• \`.pmblocker off\` - Disable DM blocking\n` +
+                    `• \`.pmblocker status\` - Current status\n` +
+                    `• \`.pmblocker setmsg <text>\` - Set warning message\n\n` +
+                    `*Current Status:* ${state.enabled ? '✅ ENABLED' : '❌ DISABLED'}`
             }, { quoted: message });
             return;
         }
-
         if (sub === 'status') {
             await sock.sendMessage(chatId, {
                 text: `📵 *PM BLOCKER STATUS*\n\n` +
-                      `*Status:* ${state.enabled ? '✅ ENABLED' : '❌ DISABLED'}\n` +
-                      `*Storage:* ${HAS_DB ? 'Database' : 'File System'}\n\n` +
-                      `*Warning Message:*\n${state.message}`
+                    `*Status:* ${state.enabled ? '✅ ENABLED' : '❌ DISABLED'}\n` +
+                    `*Storage:* ${HAS_DB ? 'Database' : 'File System'}\n\n` +
+                    `*Warning Message:*\n${state.message}`
             }, { quoted: message });
             return;
         }
-
         if (sub === 'setmsg') {
             const newMsg = rest.join(' ').trim();
             if (!newMsg) {
@@ -116,18 +108,13 @@ module.exports = {
             }, { quoted: message });
             return;
         }
-
         const enable = sub === 'on';
-        await writeState(enable);
-        
+        await writeState(enable, undefined);
         await sock.sendMessage(chatId, {
             text: `📵 *PM Blocker ${enable ? 'ENABLED' : 'DISABLED'}*\n\n` +
-                  `${enable ? '✅ Users who DM the bot will be warned and blocked.' : '❌ Private messages are now allowed.'}`
+                `${enable ? '✅ Users who DM the bot will be warned and blocked.' : '❌ Private messages are now allowed.'}`
         }, { quoted: message });
     },
-
     readState,
     writeState
 };
-
-
