@@ -1,81 +1,82 @@
 {
-  "name": "shyam-md",
-  "description": "High performance multi-device WhatsApp bot",
-  "keywords": ["whatsapp-bot", "baileys", "shyam-md"],
+  "name": "SHYAM-MD",
+  "description": "A powerful WhatsApp bot with 255+ commands — AI, Games, Group Management, Media Tools, Anti-ViewOnce, Auto-reactions & more. Built with Baileys & Node.js.",
+  "image": "https://raw.githubusercontent.com/dexsam07/SHYAM-MD/main/assets/xd-logo.jpg",
+  "logo": "https://raw.githubusercontent.com/dexsam07/SHYAM-MD/main/assets/xd-logo.jpg",
   "repository": "https://github.com/dexsam07/SHYAM-MD",
-  "stack": "container",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "nodejs",
+    "baileys",
+    "multi-device"
+  ],
   "env": {
     "SESSION_ID": {
-      "description": "Your session ID (get it by running the bot locally first)",
-      "required": true,
-      "value": "DEX~"
+      "description": "Your session ID — get it FREE at: https://dex-pair-ai.onrender.com//session",
+      "value": "DEX~",
+      "required": true
     },
     "OWNER_NUMBER": {
-      "description": "Your WhatsApp number with country code (e.g. 91001234567)",
-      "required": true,
-      "value": "91000000000"
+      "description": "Your WhatsApp number with country code, no + (e.g. 917384287404)",
+      "value": "",
+      "required": true
     },
-    "MONGO_URL": {
-      "description": "MongoDB URL for persistent storage (recommended for Heroku)",
-      "required": false,
-      "value": ""
-    },
-    "POSTGRES_URL": {
-      "description": "PostgreSQL URL for persistent storage",
-      "required": false,
-      "value": ""
-    },
-    "MYSQL_URL": {
-      "description": "MySQL URL for persistent storage",
-      "required": false,
-      "value": ""
+    "PREFIX": {
+      "description": "Bot command prefix (e.g. . or , or ! or /)",
+      "value": ".",
+      "required": false
     },
     "BOT_NAME": {
-      "description": "Your bot name",
-      "required": false,
-      "value": "SHYAM-MD"
+      "description": "Name of your bot",
+      "value": "SHYAM-MD",
+      "required": false
     },
-    "BOT_OWNER": {
-      "description": "Owner display name",
-      "required": false,
-      "value": "dexsam07"
+    "OWNER_NAME": {
+      "description": "Your name shown in menus",
+      "value": "",
+      "required": false
     },
-    "PREFIXES": {
-      "description": "Command prefixes separated by comma (e.g. .,!,/)",
-      "required": false,
-      "value": "."
+    "MODE": {
+      "description": "public = everyone can use | private = owner only",
+      "value": "public",
+      "required": false
     },
-    "PACKNAME": {
-      "description": "Sticker pack name",
-      "required": false,
-      "value": "SHYAM-MD"
+    "TIME_ZONE": {
+      "description": "Timezone for time commands (e.g. Asia/kolkata, America/New_York, Asia/Kolkata)",
+      "value": "Asia/kolkata",
+      "required": false
     },
-    "COMMAND_MODE": {
-      "description": "Bot mode: public or private",
-      "required": false,
-      "value": "public"
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key — enables GPT-powered AI commands (optional)",
+      "value": "",
+      "required": false
     },
-    "TIMEZONE": {
-      "description": "Your timezone (e.g. Asia/kolkata, America/New_York)",
-      "required": false,
-      "value": "Asia/kolkata"
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API key — enables Gemini AI chatbot (optional)",
+      "value": "",
+      "required": false
     },
-    "REMOVEBG_KEY": {
-      "description": "Remove.bg API key for background removal",
-      "required": false,
-      "value": ""
+    "WEATHER_API_KEY": {
+      "description": "OpenWeatherMap API key — enables weather command (optional, get free at openweathermap.org)",
+      "value": "",
+      "required": false
+    },
+    "NEWSAPI_API_KEY": {
+      "description": "NewsAPI key — enables news commands (optional, get free at newsapi.org)",
+      "value": "",
+      "required": false
+    },
+    "RAPIDAPI_API_KEY": {
+      "description": "RapidAPI key — enables extra media/search commands (optional)",
+      "value": "",
+      "required": false
     }
   },
+  "stack": "heroku-22",
   "buildpacks": [
-    { "url": "heroku/nodejs" },
-    { "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git" },
-    { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest" },
-    { "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git" }
-  ],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "basic"
+    {
+      "url": "heroku/nodejs"
     }
-  }
+  ]
 }

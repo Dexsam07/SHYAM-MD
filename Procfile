@@ -1,1 +1,1 @@
-web: npm run start:optimized
+web: node index.js
