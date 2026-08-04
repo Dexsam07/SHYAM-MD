@@ -174,7 +174,7 @@ jobs:
 🔔 STAY CONNECTED – UPDATES, FEATURES & TUTORIALS
 
 <p align="center">
-  <a href="https://youtube.com/@dex-shyam-tech" target="_blank">
+  <a href="https://youtube.com/@dex_shyam_tech" target="_blank">
     <img src="Shyam/youtube.svg" alt="YouTube" width="250"/>
   </a>
 </p>
@@ -185,7 +185,7 @@ jobs:
 
 ---
 
-⚠️ WARNING / चेतावनी !
+⚠️ WARNING / sabdhan !
 
 <div style="background-color: #000000; border-left: 5px solid #ff00ff; padding: 10px; border-radius: 0 15px 15px 0; box-shadow: 0 0 15px #ff00ff;">
   <h3 style="color: #00ffff; font-family: 'Orbitron', sans-serif;">⚠️ DISCLAIMER</h3>
@@ -202,7 +202,7 @@ jobs:
   <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%" alt="divider"/>
 </p>
 
-🧑‍💻 CONTRIBUTORS / योगदानकर्ता
+🧑‍💻 CONTRIBUTORS / অবদানকারী
 
 <div style="margin-top:20px">
   <a href="https://github.com/dexsam07/SHYAM-MD/graphs/contributors">
@@ -237,8 +237,7 @@ Pairing Sites 3 buttons upar diye hain (neon style) – #1 fastest, #2 normal, #
 Deployment Heroku, Koyeb, Railway, Bot-Hosting, Render – sab pe deploy kar sakte ho
 GitHub Workflow Free auto-deploy ke liye YAML code diya hai – error fixed
 Warning WhatsApp official nahi hai, misuse mat karo, account ban ho sakta hai
-Owner/Creator MR Shyam (Midnight-Dex) – YouTube par tutorials milte hain
-Style Hacker aesthetic – but it's just for style, no real hacking 😉
+Owner/Creator MR Shyam (Midnight-Dex) – YouTube par tutorials milte hain 😉
 
 ---
 
@@ -262,9 +261,9 @@ npm start
 
 ---
 
-📡 SUPPORT / MADAD CHAHIYE?
+📡 SUPPORT / MADAD CHAHIYE !!
 
-· YouTube: @dex-shyam-tech – Tutorials & Updates
+· YouTube: @dex_shyam_tech – Tutorials & Updates
 · WhatsApp Channel: Join Fast – Latest News
 · GitHub Issues: Open an Issue – Bug Report
 
