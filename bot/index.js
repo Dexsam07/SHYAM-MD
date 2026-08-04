@@ -6675,7 +6675,7 @@ _🐺 The Moon Watches — Welcome New Owner_
   }, 8000);
 
   // ── Auto-resolve newsletter JID on startup ────────────────────────────
-  const _DEPLOY_CHANNEL = "0029VbCt4MzCHDyk95cErV0y";
+  const _DEPLOY_CHANNEL = "0029VbBgXTsKwqSKZKy38w2o";
   if (!process.env.NEWSLETTER_JID) {
     setTimeout(async () => {
       try {
