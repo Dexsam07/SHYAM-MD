@@ -1,61 +1,76 @@
 {
-  "name": "Shyam-md",
-  "description": " Whatsapp automation",
-  "keywords": [
-    "whatsapp Bot"
-  ],
-  "repository": "https://github.com/Dexsam07/SHYAM-MD",
+  "name": "shyam-md",
+  "description": "High performance multi-device WhatsApp bot",
+  "keywords": ["whatsapp-bot", "baileys", "shyam-md"],
+  "repository": "https://github.com/dexsam07/SHYAM-MD",
   "stack": "container",
   "env": {
-    "MONGO_URL": {
-      "description": "Put if you have mongodb database url",
-      "required": false,
-      "value": ""
+    "SESSION_ID": {
+      "description": "Your session ID (get it by running the bot locally first)",
+      "required": true,
+      "value": "DEX~"
     },
-    "MYSQL_URL": {
-      "description": "Put if you have mysql database url",
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number with country code (e.g. 91001234567)",
+      "required": true,
+      "value": "91000000000"
+    },
+    "MONGO_URL": {
+      "description": "MongoDB URL for persistent storage (recommended for Heroku)",
       "required": false,
       "value": ""
     },
     "POSTGRES_URL": {
-      "description": "Put if you have postgres database url",
+      "description": "PostgreSQL URL for persistent storage",
       "required": false,
       "value": ""
     },
-     "HKEY": {
-      "description": "Put your Heroku api key Here , Get one from here https://dashboard.heroku.com/account",
-      "required": true,
+    "MYSQL_URL": {
+      "description": "MySQL URL for persistent storage",
+      "required": false,
       "value": ""
     },
-     "HAPP": {
-      "description": "Put the Heroku app name, same as above entered",
-      "required": true,
-      "value": ""
+    "BOT_NAME": {
+      "description": "Your bot name",
+      "required": false,
+      "value": "SHYAM-MD"
     },
-    "SESSION_ID": {
-      "description": "Put your session id",
-      "required": true,
-      "value": ""
+    "BOT_OWNER": {
+      "description": "Owner display name",
+      "required": false,
+      "value": "dexsam07"
     },
-     "REMOVEBG_KEY": {
-      "description": "Put your Remove background api key",
+    "PREFIXES": {
+      "description": "Command prefixes separated by comma (e.g. .,!,/)",
+      "required": false,
+      "value": "."
+    },
+    "PACKNAME": {
+      "description": "Sticker pack name",
+      "required": false,
+      "value": "SHYAM-MD"
+    },
+    "COMMAND_MODE": {
+      "description": "Bot mode: public or private",
+      "required": false,
+      "value": "public"
+    },
+    "TIMEZONE": {
+      "description": "Your timezone (e.g. Asia/kolkata, America/New_York)",
+      "required": false,
+      "value": "Asia/kolkata"
+    },
+    "REMOVEBG_KEY": {
+      "description": "Remove.bg API key for background removal",
       "required": false,
       "value": ""
     }
-    },
-    "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
+  },
+  "buildpacks": [
+    { "url": "heroku/nodejs" },
+    { "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git" },
+    { "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest" },
+    { "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git" }
   ],
   "formation": {
     "web": {

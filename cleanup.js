@@ -1,31 +1,27 @@
 const fs = require('fs');
 const path = require('path');
 
-const customTemp = path.join(process.cwd(), 'temp');
+console.log('🧹 Cleaning up temporary files...');
 
-if (!fs.existsSync(customTemp)) {
-    console.log('Temp folder does not exist. Creating it...');
-    fs.mkdirSync(customTemp, { recursive: true });
+// Clean temp files
+const tempDir = './temp';
+if (fs.existsSync(tempDir)) {
+    const files = fs.readdirSync(tempDir);
+    files.forEach(file => {
+        const filePath = path.join(tempDir, file);
+        try {
+            fs.unlinkSync(filePath);
+            console.log(`✅ Deleted: ${file}`);
+        } catch (err) {
+            console.log(`❌ Failed to delete: ${file}`);
+        }
+    });
 }
 
-const files = fs.readdirSync(customTemp);
-let deletedCount = 0;
+// Clean session files (optional - be careful)
+const sessionDir = './session';
+if (fs.existsSync(sessionDir)) {
+    console.log('📁 Session folder preserved');
+}
 
-files.forEach(file => {
-    const filePath = path.join(customTemp, file);
-    try {
-        const stats = fs.statSync(filePath);
-        const ageInMs = Date.now() - stats.mtimeMs;
-        const threeHours = 1 * 60 * 60 * 1000;
-
-        if (ageInMs > threeHours) {
-            fs.unlinkSync(filePath);
-            deletedCount++;
-        }
-    } catch (err) {
-        console.error(`❌ Could not process ${file}: ${err.message}`);
-    }
-});
-
-console.log(`✅ Cleanup finished. Deleted ${deletedCount} files.`);
-process.exit(0);
+console.log('✅ Cleanup completed!');

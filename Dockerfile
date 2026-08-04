@@ -1,8 +1,8 @@
-FROM quay.io/qasimtech/Shyam-bot:latest
+FROM quay.io/christech/shyam-md:latest
 
 WORKDIR /root/shyam-md
 
-RUN git clone https://github.com/Dexsam07/SHYAM-MD . && \
+RUN git clone https://github.com/dexsam07/SHYAM-MD . && \
     npm install
 
 EXPOSE 5000
