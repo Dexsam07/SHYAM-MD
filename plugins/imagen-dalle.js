@@ -1,0 +1,62 @@
+import axios from 'axios';
+const IMAGE_APIS = [
+    (p) => `https://stable.stacktoy.workers.dev/?apikey=Suhail&prompt=${encodeURIComponent(p)}`,
+    (p) => `https://dalle.stacktoy.workers.dev/?apikey=Suhail&prompt=${encodeURIComponent(p)}`,
+    (p) => `https://flux.gtech-apiz.workers.dev/?apikey=Suhail&text=${encodeURIComponent(p)}`
+];
+const generateImage = async (prompt) => {
+    for (const apiUrl of IMAGE_APIS) {
+        try {
+            const { data } = await axios.get(apiUrl(prompt), {
+                responseType: 'arraybuffer',
+                timeout: 30000
+            });
+            const buf = Buffer.from(data);
+            // Validate it's actually an image (PNG/JPEG magic bytes)
+            if (buf[0] === 0x89 || buf[0] === 0xFF)
+                return buf;
+        }
+        catch {
+            continue;
+        }
+    }
+    throw new Error('All image generation APIs failed');
+};
+const enhancePrompt = (prompt) => {
+    const enhancers = [
+        'high quality', 'detailed', 'masterpiece', 'best quality',
+        'ultra realistic', '4k', 'highly detailed', 'cinematic lighting'
+    ];
+    const selected = enhancers
+        .sort(() => Math.random() - 0.5)
+        .slice(0, Math.floor(Math.random() * 2) + 3);
+    return `${prompt}, ${selected.join(', ')}`;
+};
+export default {
+    command: 'dalle',
+    aliases: ['aiimage', 'draw', 'genimage'],
+    category: 'ai',
+    description: 'Generate an AI image based on your prompt',
+    usage: '.dalle <prompt>',
+    async handler(sock, message, args, context) {
+        const chatId = context.chatId || message.key.remoteJid;
+        const imagePrompt = args.join(' ').trim();
+        if (!imagePrompt) {
+            return sock.sendMessage(chatId, { text: '🎨 *AI Image Generator*\n\nUsage: `.dalle <prompt>`\nExample: `.dalle a beautiful sunset over mountains`' }, { quoted: message });
+        }
+        await sock.sendMessage(chatId, { react: { text: '🎨', key: message.key } });
+        await sock.sendMessage(chatId, { text: '🎨 Generating your image... Please wait.' }, { quoted: message });
+        try {
+            const enhanced = enhancePrompt(imagePrompt);
+            const imageBuffer = await generateImage(enhanced);
+            await sock.sendMessage(chatId, {
+                image: imageBuffer,
+                caption: `🎨 *Generated Image*\n📝 Prompt: _${imagePrompt}_`
+            }, { quoted: message });
+        }
+        catch (error) {
+            console.error('Imagine error:', error.message);
+            await sock.sendMessage(chatId, { text: '❌ Failed to generate image. Please try again later.' }, { quoted: message });
+        }
+    }
+};
