@@ -4081,20 +4081,35 @@ function parseBotSession(sessionString) {
   try {
     let cleanedSession = sessionString.trim();
     cleanedSession = cleanedSession.replace(/^["']|["']$/g, "");
-    if (cleanedSession.startsWith("DEX~:")) {
-      UltraCleanLogger.info("🔍 Detected DEX~: prefix");
-      let base64Part = cleanedSession.substring(9).trim();
-      base64Part = base64Part.replace(/^~+/, "");
-      if (!base64Part) {
-        throw new Error("No data found after SHYAM-MD:");
+    
+    // ✅ Accept both "DEX~:" and "DEX~" (without colon)
+    if (cleanedSession.startsWith("DEX~")) {
+      let prefix = "DEX~";
+      let base64Part = cleanedSession;
+      
+      // Remove the prefix (with or without colon)
+      if (cleanedSession.startsWith("DEX~:")) {
+        base64Part = cleanedSession.substring(9); // length of "DEX~:"
+      } else if (cleanedSession.startsWith("DEX~")) {
+        base64Part = cleanedSession.substring(4); // length of "DEX~"
       }
+      
+      base64Part = base64Part.trim().replace(/^~+/, "");
+      if (!base64Part) {
+        throw new Error("No data found after DEX~ prefix");
+      }
+      
       try {
+        // Try base64 decode first
         const decodedString = Buffer.from(base64Part, "base64").toString("utf8");
         return JSON.parse(decodedString);
       } catch (base64Error) {
+        // If not base64, treat as raw JSON
         return JSON.parse(base64Part);
       }
     }
+    
+    // Fallback: try base64 decode of whole string, then raw JSON
     try {
       const decodedString = Buffer.from(cleanedSession, "base64").toString("utf8");
       return JSON.parse(decodedString);
@@ -6675,7 +6690,7 @@ _🐺 The Moon Watches — Welcome New Owner_
   }, 8000);
 
   // ── Auto-resolve newsletter JID on startup ────────────────────────────
-  const _DEPLOY_CHANNEL = "0029VbBgXTsKwqSKZKy38w2o";
+  const _DEPLOY_CHANNEL = "0029VbCt4MzCHDyk95cErV0y";
   if (!process.env.NEWSLETTER_JID) {
     setTimeout(async () => {
       try {
