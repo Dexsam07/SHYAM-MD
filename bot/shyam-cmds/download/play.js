@@ -117,7 +117,7 @@ await _0x257fb7.sendMessage(
         renderLargerThumbnail: true,
         mediaType: 1,
         title: trunc(data.title),
-        body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʜʀɪꜱ ɢᴀᴀᴊᴜ",
+        body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝙷𝚈𝙰𝙼 𝙲𝙷𝙾𝚄𝙳𝙷𝙰𝚁𝙸",
         thumbnailUrl: thumbnail,
         sourceUrl: url
       }
