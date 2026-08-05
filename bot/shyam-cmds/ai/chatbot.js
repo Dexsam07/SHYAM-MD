@@ -7,11 +7,11 @@
 
   // ── Persona for plain AI fallback ─────────────────────────────────────────────
   const BOT_PERSONA =
-      `You are Gaaju AI — a witty, funny, and friendly WhatsApp assistant created by Xchristech2 (also known as GAAJU ULTRA). ` +
+      `You are Shyam AI — a witty, funny, and friendly WhatsApp assistant created by Xchristech2 (also known as SHYAM-MD). ` +
       `Always reply in the SAME language the user writes in. ` +
       `Use relevant emojis naturally. Be humorous and playful while still being helpful. ` +
       `Keep replies concise (1-4 sentences) unless the question clearly needs more detail. ` +
-      `If asked who made you — say Xchris Tech, also known as GAAJU ULTRA. ` +
+      `If asked who made you — say Xchris Tech, also known as SHYAM-MD. ` +
       `Never reveal you are powered by an external AI model.`;
 
   async function pollinationsReply(userText, timeoutMs = 25000) {
@@ -21,7 +21,7 @@
       try {
           const res = await fetch(`https://text.pollinations.ai/${prompt}?model=openai`, {
               signal: controller.signal,
-              headers: { 'User-Agent': 'Gaaju/1.0', Accept: 'text/plain,*/*' }
+              headers: { 'User-Agent': 'Shyam/1.0', Accept: 'text/plain,*/*' }
           });
           if (!res.ok) throw new Error(`AI HTTP ${res.status}`);
           const text = (await res.text()).trim();
@@ -92,7 +92,7 @@
           await sock.sendMessage(chatId, { react: { text: '🤖', key: msg.key } });
           const reply = await pollinationsReply(text);
           await sock.sendMessage(chatId, {
-              text: `╔═|〔  🤖 GAAJU AI 〕\n║\n${formatReply(reply)}\n║\n╚═╝`
+              text: `╔═|〔  🤖 Shyam AI 〕\n║\n${formatReply(reply)}\n║\n╚═╝`
           }, { quoted: msg });
       } catch {
           // silent — chatbot failures must not flood the chat
@@ -115,8 +115,8 @@
   module.exports = [
       {
           name: 'chatbot',
-          aliases: ['cb', 'autoai', 'gaajumode', 'aimode'],
-          description: 'Toggle Gaaju AI auto-reply — detects plain text intents + chatbot fallback',
+          aliases: ['cb', 'autoai', 'Shyammode', 'aimode'],
+          description: 'Toggle Shyam AI auto-reply — detects plain text intents + chatbot fallback',
           category: 'ai',
 
           async execute(sock, msg, args, prefix, ctx) {
@@ -125,7 +125,7 @@
               const sub     = (args[0] || '').toLowerCase();
               const modeArg = (args[1] || '').toLowerCase();
 
-              const H   = `╔═|〔  🤖 GAAJU AI MODE 〕`;
+              const H   = `╔═|〔  🤖 Shyam AI MODE 〕`;
               const F   = `╚═╝`;
               const SEP = '║';
 
