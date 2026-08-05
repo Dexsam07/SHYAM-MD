@@ -6,35 +6,36 @@ const { getBotName } = require('../../lib/botname');
 const cfg  = require('../../config');
 
 const CMDS_DIR  = path.join(__dirname, '..');
-const LOGO_PATH = path.join(__dirname, '../../../assets/xd-logo.jpg');
+const LOGO_PATH = path.join(__dirname, '../../../assets/dex-logo.jpg');
 
 const CHANNEL_URL = 'https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o';
 
-let BOT_VERSION = 'v1.2.0';
+let BOT_VERSION = 'v3.2.0';
 try {
     const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../../package.json'), 'utf8'));
     if (pkg.version) BOT_VERSION = `v${pkg.version}`;
 } catch {}
 
+// ---------- NEW HACKER-STYLE CATEGORY LABELS ----------
 const CATEGORY_LABELS = {
-    ai: '🤖 AI',
+    ai: '🧠 AI',
     adult: '🔞 ADULT',
-    automation: '⚙️ AUTOMATION',
-    channel: '📢 CHANNEL',
-    download: '📥 DOWNLOAD',
-    education: '📚 EDUCATION',
-    fun: '😂 FUN',
-    games: '🎮 GAMES',
+    automation: '🤖 AUTOMATION',
+    channel: '📡 CHANNEL',
+    download: '⬇️ DOWNLOAD',
+    education: '📘 EDUCATION',
+    fun: '🎭 FUN',
+    games: '🎯 GAMES',
     group: '👥 GROUP',
     image: '🖼️ IMAGE',
     movie: '🎬 MOVIE',
-    news: '📰 NEWS',
+    news: '🗞️ NEWS',
     owner: '👑 OWNER',
-    search: '🔎 SEARCH',
-    spiritual: '🕊️ SPIRITUAL',
-    sports: '⚽ SPORTS',
-    stalker: '🔍 STALKER',
-    utility: '🔧 UTILITY',
+    search: '🔍 SEARCH',
+    spiritual: '🕯️ SPIRITUAL',
+    sports: '🏆 SPORTS',
+    stalker: '🕵️ STALKER',
+    utility: '🧩 UTILITY',
 };
 
 const CATEGORY_ORDER = [
@@ -163,77 +164,72 @@ module.exports = {
 
         const lines = [];
 
-        // ================= HEADER
-lines.push(`┏━━❐✧ ${botName} ✧❐`);
-lines.push(`┃✦ Prefix: [${p}]`);
-lines.push(`┃✦ Owner: ${owner}`);
-lines.push(`┃✦ Mode: ${mode}`);
-lines.push(`┃✦ Platform: ${getPlatform()}`);
-lines.push(`┃✦ Speed: ${getSpeed(msg)}`);
-lines.push(`┃✦ Uptime: ${getUptime()}`);
-lines.push(`┃✦ Version: ${BOT_VERSION}`);
-lines.push(`┃✦ Usage: ${usage.text}`);
-lines.push(`┃✦ RAM: ${getBar(usage.percent)}`);
-lines.push(`┃✦ Commands: ${totalCmds}`);
-lines.push(`┗━━❐`);
+        // ---------- Box building helpers ----------
+        const BOX_WIDTH = 40;
+        const topBorder = '━'.repeat(BOX_WIDTH);
+        const bottomBorder = '╰' + '━'.repeat(BOX_WIDTH - 1);
 
-// 🔥 NEW READ MORE (ADD THIS)
-lines.push(readMore);
+        // ---------- HEADER BOX (hacker style with new emojis) ----------
+        lines.push(topBorder);
+        lines.push(`┃ 🪀 ${botName} 🪀`);
+        lines.push(bottomBorder);
 
-const mid1 = Math.floor(catData.length / 3);
-const mid2 = Math.floor(catData.length * 2 / 3);
+        lines.push(`┃ 🛸 Prefix: [${p}]`);
+        lines.push(`┃ 🧑‍💻 Owner: ${owner}`);
+        lines.push(`┃ 🔐 Mode: ${mode}`);
+        lines.push(`┃ 💻 Platform: ${getPlatform()}`);
+        lines.push(`┃ ⚡ Speed: ${getSpeed(msg)}`);
+        lines.push(`┃ ⏰ Uptime: ${getUptime()}`);
+        lines.push(`┃ 📦 Version: ${BOT_VERSION}`);
+        lines.push(`┃ 🧠 Memory: ${usage.text}`);
+        lines.push(`┃ 📊 RAM: ${getBar(usage.percent)}`);
+        lines.push(`┃ 📟 Commands: ${totalCmds}`);
+        lines.push('─'.repeat(BOX_WIDTH));
 
-// ================= PART 1
-for (let i = 0; i < mid1; i++) {
-    const { cat, cmdNames } = catData[i];
-    const label = CATEGORY_LABELS[cat] || `📁 ${cat.toUpperCase()}`;
-    lines.push(`\n┏━━❐ ${label} ❐`);
-    for (const cmd of cmdNames) {
-        lines.push(`┃✦ ${p}${cmd}`);
-    }
-    lines.push(`┗━━❐`);
-}
+        // READ MORE 1
+        lines.push(readMore);
 
-// 🔥 READ MORE 1
-lines.push(readMore);
+        const mid1 = Math.floor(catData.length / 3);
+        const mid2 = Math.floor(catData.length * 2 / 3);
 
-// ================= PART 2
-for (let i = mid1; i < mid2; i++) {
-    const { cat, cmdNames } = catData[i];
-    const label = CATEGORY_LABELS[cat] || `📁 ${cat.toUpperCase()}`;
-    lines.push(`\n┏━━❐ ${label} ❐`);
-    for (const cmd of cmdNames) {
-        lines.push(`┃✦ ${p}${cmd}`);
-    }
-    lines.push(`┗━━❐`);
-}
+        // Helper to add a category block (each in its own box)
+        const addCategoryBlock = (start, end) => {
+            for (let i = start; i < end; i++) {
+                const { cat, cmdNames } = catData[i];
+                const label = CATEGORY_LABELS[cat] || `📁 ${cat.toUpperCase()}`;
+                lines.push(topBorder);
+                lines.push(`┃ ${label}`);
+                lines.push(bottomBorder);
+                for (const cmd of cmdNames) {
+                    lines.push(`  ➜ ${p}${cmd}`);
+                }
+                if (i < end - 1) lines.push('');
+            }
+        };
 
-// 🔥 READ MORE 2
-lines.push(readMore);
+        // ---------- PART 1 ----------
+        addCategoryBlock(0, mid1);
+        lines.push(readMore);
 
-// ================= PART 3
-for (let i = mid2; i < catData.length; i++) {
-    const { cat, cmdNames } = catData[i];
-    const label = CATEGORY_LABELS[cat] || `📁 ${cat.toUpperCase()}`;
-    lines.push(`\n┏━━❐ ${label} ❐`);
-    for (const cmd of cmdNames) {
-        lines.push(`┃✦ ${p}${cmd}`);
-    }
-    lines.push(`┗━━❐`);
-}
+        // ---------- PART 2 ----------
+        addCategoryBlock(mid1, mid2);
+        lines.push(readMore);
 
-// 🔥 READ MORE 3 (FINAL PUSH EFFECT)
-lines.push(readMore);
+        // ---------- PART 3 ----------
+        addCategoryBlock(mid2, catData.length);
+        // final readMore to push footer down
+        lines.push(readMore);
 
-// ================= FOOTER
-lines.push('');
-lines.push('');
-lines.push(` ${botName}`);
-lines.push('> Powered by ᴄʜʀɪꜱ ɢᴀᴀᴊᴜ');
+        // ---------- FOOTER BOX ----------
+        lines.push('');
+        lines.push(topBorder);
+        lines.push(`┃ 🚀 ${botName}`);
+        lines.push('┃ ⚡ Powered by 🇮🇳 DEX SHYAM TECH 𓋜');
+        lines.push(bottomBorder);
 
-const caption = lines.join('\n');
+        const caption = lines.join('\n');
 
-const msgOptions = { quoted: msg };
+        const msgOptions = { quoted: msg };
 
         msgOptions.contextInfo = {
             externalAdReply: {

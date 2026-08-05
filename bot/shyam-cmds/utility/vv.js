@@ -14,7 +14,7 @@ module.exports = {
     try {
       await _0x395ce8.sendMessage(_0x1352e9, {
         react: {
-          text: "👁️",
+          text: "🫣",
           key: _0x4d88ff.key
         }
       });
