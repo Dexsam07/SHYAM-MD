@@ -57,7 +57,7 @@
 
 <p align="center">
   <!-- #1 Button -->
-  <a href="https://dex-pair-ai.onrender.com/" target="_blank">
+  <a href="https://dex-sessions.zone.id/" target="_blank">
     <img src="https://img.shields.io/badge/🚀_%231-FASTEST_PAIRING-00C853?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#1 Fastest Pairing"/>
   </a>
   <br>
