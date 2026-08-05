@@ -8,8 +8,8 @@ const { resolveDisplayWithName } = require("../../lib/groupUtils");
 
 const CFG_FILE = path.join(__dirname, "../../data/welcome_data.json");
 
-const CHANNEL_ID = "120363406588763460@newsletter";
-const CHANNEL_LINK = "https://whatsapp.com/channel/0029VbBvGgyFsn0alyIDjw0z";
+const CHANNEL_ID = "120363406449026172@newsletter";
+const CHANNEL_LINK = "https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o";
 
 const DEFAULT_MSG = [
   "╭━━━〔 👋 WELCOME 〕━━━⬣",
@@ -104,7 +104,7 @@ async function sendWelcomeMessage(sock, groupId, users, msgTemplate, { approvedB
 
           forwardedNewsletterMessageInfo: {
             newsletterJid: CHANNEL_ID,
-            newsletterName: "GAAJU MD ULTRA",
+            newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
             serverMessageId: 1
           },
 
