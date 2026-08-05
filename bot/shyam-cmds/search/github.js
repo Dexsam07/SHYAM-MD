@@ -75,10 +75,10 @@ module.exports = [
                         `╔═|〔  GITHUB 🐙 〕`,
                         `║`,
                         `║ ▸ *Usage*   : ${prefix}github <username>`,
-                        `║ ▸ *Example* : ${prefix}github Xchristech2`,
+                        `║ ▸ *Example* : ${prefix}github dexsam07`,
                         `║`,
                         `║ ▸ *Repo*    : ${prefix}ghrepo <user/repo>`,
-                        `║ ▸ *Example* : ${prefix}ghrepo Xchristech2/GAAJU-MD-ULTRA`,
+                        `║ ▸ *Example* : ${prefix}ghrepo dexsam07/SHYAM-MD`,
                         `║`,
                         `╚═|〔 ${name} 〕`,
                     ].join('\n')
@@ -143,7 +143,7 @@ module.exports = [
             const query = parseGHRepo(args);
             if (!query || !query.includes('/')) {
                 return sock.sendMessage(chatId, {
-                    text: `╔═|〔  GITHUB REPO 📦 〕\n║\n║ ▸ *Usage*   : ${prefix}ghrepo <user/repo>\n║ ▸ *Example* : ${prefix}ghrepo Xchristech2/GAAJU-MD-ULTA\n║ ▸ *Also works* : ${prefix}ghrepo https://github.com/user/repo\n║\n╚═|〔 ${name} 〕`
+                    text: `╔═|〔  GITHUB REPO 📦 〕\n║\n║ ▸ *Usage*   : ${prefix}ghrepo <user/repo>\n║ ▸ *Example* : ${prefix}ghrepo dexsam07/SHYAM-MD\n║ ▸ *Also works* : ${prefix}ghrepo https://github.com/user/repo\n║\n╚═|〔 ${name} 〕`
                 }, { quoted: msg });
             }
 

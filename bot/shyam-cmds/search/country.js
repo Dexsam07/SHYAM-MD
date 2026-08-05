@@ -2,14 +2,14 @@
 
 const { getBotName } = require('../../lib/botname');
 
-const CHANNEL_ID = "120363406588763460@newsletter";
-const CHANNEL_LINK = "https://whatsapp.com/channel/0029VbBvGgyFsn0alyIDjw0z";
+const CHANNEL_ID = "120363406449026172@newsletter";
+const CHANNEL_LINK = "https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o";
 
 async function fetchCountry(query) {
     const url = `https://restcountries.com/v3.1/name/${encodeURIComponent(query)}?fullText=false`;
     const res = await fetch(url, {
         signal: AbortSignal.timeout(12000),
-        headers: { 'User-Agent': 'Gaaju/1.0' }
+        headers: { 'User-Agent': 'Shyam/1.0' }
     });
 
     if (res.status === 404) throw new Error(`Country not found: ${query}`);
@@ -98,7 +98,7 @@ module.exports = {
                 contextInfo: {
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: CHANNEL_ID,
-                        newsletterName: "GAAJU MD ULTRA",
+                        newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
                         serverMessageId: 1
                     }
                 }

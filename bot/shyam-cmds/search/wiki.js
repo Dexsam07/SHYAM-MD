@@ -8,7 +8,7 @@ async function wikiSearch(_0x2950d2) {
   const _0x12fde1 = await fetch(_0x540d1d, {
     signal: AbortSignal.timeout(12000),
     headers: {
-      "User-Agent": "Gaaju/1.0"
+      "User-Agent": "Shyam/1.0"
     }
   });
   if (!_0x12fde1.ok) {
@@ -22,7 +22,7 @@ async function wikiSummary(_0xd14d5e) {
   const _0x4e2c8c = await fetch(_0x1abd9b, {
     signal: AbortSignal.timeout(12000),
     headers: {
-      "User-Agent": "Gaaju/1.0"
+      "User-Agent": "Shyam/1.0"
     }
   });
   if (!_0x4e2c8c.ok) {
