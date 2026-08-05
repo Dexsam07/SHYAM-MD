@@ -7660,7 +7660,7 @@ async function handleIncomingMessage(sock, msg) {
     if (!textMsg) {
       return;
     }
-    if (isshyamAIEnabled() && isShyamAITrigger(textMsg) && !msg.key.fromMe) {
+    if (isShyamAIEnabled() && isShyamAITrigger(textMsg) && !msg.key.fromMe) {
       const isOwnerW = jidManager.isOwner(msg);
       let isSudoW = jidManager.isSudo(msg);
       if (isOwnerW || isSudoW) {
