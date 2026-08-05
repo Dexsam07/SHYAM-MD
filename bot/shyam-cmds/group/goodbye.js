@@ -8,7 +8,7 @@ const { resolveDisplayWithName } = require('../../lib/groupUtils');
 const CFG_FILE = path.join(__dirname, '../../data/goodbye_data.json');
 
 // 🔗 YOUR GROUP LINK ADDED HERE
-const GROUP_LINK = "https://chat.whatsapp.com/J2H0ksHUHaLDhYkjxVzvvl";
+const GROUP_LINK = "https://chat.whatsapp.com/Fu8Ck4TetM8BX902ZEWVIR?s=cl&p=a&mlu=4";
 
 const DEFAULT_MSG = [
     `╔═|〔  GOODBYE 〕`,

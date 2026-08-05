@@ -35,8 +35,8 @@ module.exports = {
 
           contextInfo: {
             forwardedNewsletterMessageInfo: {
-              newsletterJid: "120363406588763460@newsletter",
-              newsletterName: "GAAJU MD ULTRA",
+              newsletterJid: "120363406449026172@newsletter",
+              newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
               serverMessageId: 1
             }
           }
@@ -71,8 +71,8 @@ module.exports = {
 
             contextInfo: {
               forwardedNewsletterMessageInfo: {
-                newsletterJid: "120363406588763460@newsletter",
-                newsletterName: "GAAJU MD ULTRA",
+                newsletterJid: "120363406449026172@newsletter",
+                newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
                 serverMessageId: 1
               }
             }
@@ -116,8 +116,8 @@ module.exports = {
 
           contextInfo: {
             forwardedNewsletterMessageInfo: {
-              newsletterJid: "120363406588763460@newsletter",
-              newsletterName: "GAAJU MD ULTRA",
+              newsletterJid: "120363406449026172@newsletter",
+              newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
               serverMessageId: 1
             }
           }
@@ -142,8 +142,8 @@ module.exports = {
 
           contextInfo: {
             forwardedNewsletterMessageInfo: {
-              newsletterJid: "120363406588763460@newsletter",
-              newsletterName: "GAAJU MD ULTRA",
+              newsletterJid: "120363406449026172@newsletter",
+              newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
               serverMessageId: 1
             }
           }
