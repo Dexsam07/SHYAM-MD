@@ -33,8 +33,8 @@ function getKey(_0x3e5ab5, _0x5b5bf5) {
   return _0x3e5ab5 + "::" + _0x5b5bf5.split("@")[0].split(":")[0];
 }
 
-const CHANNEL_ID = "120363406588763460@newsletter";
-const CHANNEL_LINK = "https://whatsapp.com/channel/0029VbBvGgyFsn0alyIDjw0z";
+const CHANNEL_ID = "120363406449026172@newsletter";
+const CHANNEL_LINK = "https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o";
 
 module.exports = [{
   name: "warn",
@@ -60,11 +60,11 @@ module.exports = [{
         contextInfo: {
           forwardedNewsletterMessageInfo: {
             newsletterJid: CHANNEL_ID,
-            newsletterName: "GAAJU MD ULTRA",
+            newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
             serverMessageId: 1
           },
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -82,7 +82,7 @@ module.exports = [{
           "╔═|〔  WARN 〕\n║\n║ ▸ *Status* : ❌ Permission denied\n║ ▸ *Reason* : Sudo users and group admins only\n║\n╚═|〔 " + _0x1b4fae + " 〕",
         contextInfo: {
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -98,7 +98,7 @@ module.exports = [{
           "╔═|〔  WARN 〕\n║\n║ ▸ *Usage* : " + _0x1fd591 + "warn @user [reason]\n║\n╚═|〔 " + _0x1b4fae + " 〕",
         contextInfo: {
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -143,11 +143,11 @@ module.exports = [{
       contextInfo: {
         forwardedNewsletterMessageInfo: {
           newsletterJid: CHANNEL_ID,
-          newsletterName: "GAAJU MD ULTRA",
+          newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
           serverMessageId: 1
         },
         externalAdReply: {
-          title: "GAAJU MD ULTRA",
+          title: "🇮🇳 DEX SHYAM TECH 𓋜",
           body: "View Channel",
           mediaType: 1,
           sourceUrl: CHANNEL_LINK
@@ -179,7 +179,7 @@ module.exports = [{
           "╔═|〔  WARNS 〕\n║\n║ ▸ *Status* : ❌ Group only\n║\n╚═|〔 " + _0x1f023a + " 〕",
         contextInfo: {
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -195,7 +195,7 @@ module.exports = [{
           "╔═|〔  WARNS 〕\n║\n║ ▸ *Usage* : " + _0x28816d + "warns @user or reply a message\n║\n╚═|〔 " + _0x1f023a + " 〕",
         contextInfo: {
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -217,11 +217,11 @@ module.exports = [{
       contextInfo: {
         forwardedNewsletterMessageInfo: {
           newsletterJid: CHANNEL_ID,
-          newsletterName: "GAAJU MD ULTRA",
+          newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
           serverMessageId: 1
         },
         externalAdReply: {
-          title: "GAAJU MD ULTRA",
+          title: "🇮🇳 DEX SHYAM TECH 𓋜",
           body: "View Channel",
           mediaType: 1,
           sourceUrl: CHANNEL_LINK
@@ -253,7 +253,7 @@ module.exports = [{
           "╔═|〔  RESET WARN 〕\n║\n║ ▸ *Status* : ❌ Group only\n║\n╚═|〔 " + _0x4fabae + " 〕",
         contextInfo: {
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -271,7 +271,7 @@ module.exports = [{
           "╔═|〔  RESET WARN 〕\n║\n║ ▸ *Status* : ❌ Permission denied\n║ ▸ *Reason* : Sudo users and group admins only\n║\n╚═|〔 " + _0x4fabae + " 〕",
         contextInfo: {
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -287,7 +287,7 @@ module.exports = [{
           "╔═|〔  RESET WARN 〕\n║\n║ ▸ *Usage* : " + _0x2f7d4b + "resetwarn @user or reply a message\n║\n╚═|〔 " + _0x4fabae + " 〕",
         contextInfo: {
           externalAdReply: {
-            title: "GAAJU MD ULTRA",
+            title: "🇮🇳 DEX SHYAM TECH 𓋜",
             body: "View Channel",
             mediaType: 1,
             sourceUrl: CHANNEL_LINK
@@ -309,11 +309,11 @@ module.exports = [{
       contextInfo: {
         forwardedNewsletterMessageInfo: {
           newsletterJid: CHANNEL_ID,
-          newsletterName: "GAAJU MD ULTRA",
+          newsletterName: "🇮🇳 DEX SHYAM TECH 𓋜",
           serverMessageId: 1
         },
         externalAdReply: {
-          title: "GAAJU MD ULTRA",
+          title: "🇮🇳 DEX SHYAM TECH 𓋜",
           body: "View Channel",
           mediaType: 1,
           sourceUrl: CHANNEL_LINK
