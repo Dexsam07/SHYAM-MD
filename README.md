@@ -80,7 +80,7 @@
 <p align="center">
   <!-- #3 Button -->
   <a href="https://shyam-md-ofc.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#2 Normal Pairing"/>
+    <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Normal Pairing"/>
   </a>
   <br>
   <a href="https://shyam-md-ofc.onrender.com/" target="_blank">
@@ -91,7 +91,7 @@
 <p align="center">
   <!-- #4 Button -->
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/🤖_%233-MINI_BOT-FF9800?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Mini Bot"/>
+    <img src="https://img.shields.io/badge/🤖_%233-MINI_BOT-FF9800?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#4 Mini Bot"/>
   </a>
   <br>
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
