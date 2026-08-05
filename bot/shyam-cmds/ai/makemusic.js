@@ -120,7 +120,7 @@ const makemusicCmd = {
       }
       const _0x411cf1 = await dlBuffer(_0x172ece);
       const _0x105b08 = _0x293d07.title || _0x51e692.substring(0, 40);
-      const _0x363cf2 = ["╔═|〔  🎵 AI MUSIC READY 〕", "║", "║ ▸ *Title*  : " + _0x105b08, "║ ▸ *Genre*  : " + (_0x293d07.genre || _0x422ab5), "║ ▸ *Mood*   : " + (_0x293d07.mood || _0x5c2a94), "║ ▸ *Vocal*  : " + _0x2ca2c0, "║ ▸ *Prompt* : " + _0x51e692.substring(0, 50) + (_0x51e692.length > 50 ? "..." : ""), "║", "║ 🤖 Powered by Toosii AI 🔥", "║", "╚═|〔 " + _0x73e145 + " 〕"].join("\n");
+      const _0x363cf2 = ["╔═|〔  🎵 AI MUSIC READY 〕", "║", "║ ▸ *Title*  : " + _0x105b08, "║ ▸ *Genre*  : " + (_0x293d07.genre || _0x422ab5), "║ ▸ *Mood*   : " + (_0x293d07.mood || _0x5c2a94), "║ ▸ *Vocal*  : " + _0x2ca2c0, "║ ▸ *Prompt* : " + _0x51e692.substring(0, 50) + (_0x51e692.length > 50 ? "..." : ""), "║", "║ 🤖 Powered by DEX AI 🔥", "║", "╚═|〔 " + _0x73e145 + " 〕"].join("\n");
       await _0x162527.sendMessage(_0x43647f, {
         audio: _0x411cf1,
         mimetype: "audio/mpeg",
