@@ -53,7 +53,7 @@
 
 ## ⚡ PAIRING SITES – CLICK & CONNECT ⚡
 
-> **Ab ranking site bhi clickable - neeche diye gaye saare buttons ko dabao aur apna session code lo!**
+> **🪀Ab ranking site bhi clickable - neeche diye gaye saare buttons ko dabao aur apna session code lo!**
 
 <p align="center">
   <!-- #1 -->
