@@ -89,6 +89,17 @@
 </p>
 
 <p align="center">
+  <!-- #3 Button -->
+  <a href="https://dex-session.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Normal Pairing"/>
+  </a>
+  <br>
+  <a href="https://dex-session.onrender.com/" target="_blank">
+    <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
+  </a>
+</p>
+
+<p align="center">
   <!-- #4 Button -->
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/🤖_%233-MINI_BOT-FF9800?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#4 Mini Bot"/>
