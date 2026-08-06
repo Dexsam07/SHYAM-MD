@@ -53,10 +53,10 @@
 
 ## ⚡ PAIRING SITES – CLICK & CONNECT ⚡
 
-> **Ab ranking text bhi clickable buttons hain – neeche diye gaye teeno buttons ko dabao aur apna session code lo!**
+> **Ab ranking text bhi clickable buttons hain – neeche diye gaye saare buttons ko dabao aur apna session code lo!**
 
 <p align="center">
-  <!-- #1 Button -->
+  <!-- #1 -->
   <a href="https://dex-sessions.zone.id/" target="_blank">
     <img src="https://img.shields.io/badge/🚀_%231-FASTEST_PAIRING-00C853?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#1 Fastest Pairing"/>
   </a>
@@ -67,7 +67,7 @@
 </p>
 
 <p align="center">
-  <!-- #2 Button -->
+  <!-- #2 -->
   <a href="https://dex-pairing-session.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#2 Normal Pairing"/>
   </a>
@@ -78,9 +78,9 @@
 </p>
 
 <p align="center">
-  <!-- #3 Button -->
+  <!-- #3 -->
   <a href="https://shyam-md-ofc.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Normal Pairing"/>
+    <img src="https://img.shields.io/badge/🔵_%233-ALTERNATE_PAIRING-FF5722?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Alternate Pairing"/>
   </a>
   <br>
   <a href="https://shyam-md-ofc.onrender.com/" target="_blank">
@@ -89,9 +89,9 @@
 </p>
 
 <p align="center">
-  <!-- #3 Button -->
+  <!-- #4 -->
   <a href="https://dex-session.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Normal Pairing"/>
+    <img src="https://img.shields.io/badge/🟣_%234-SESSION_PAIRING-9C27B0?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#4 Session Pairing"/>
   </a>
   <br>
   <a href="https://dex-session.onrender.com/" target="_blank">
@@ -100,9 +100,9 @@
 </p>
 
 <p align="center">
-  <!-- #4 Button -->
+  <!-- #5 -->
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/🤖_%233-MINI_BOT-FF9800?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#4 Mini Bot"/>
+    <img src="https://img.shields.io/badge/🤖_%235-MINI_BOT-FF9800?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#5 Mini Bot"/>
   </a>
   <br>
   <a href="https://the-dex-mini.onrender.com/" target="_blank">
@@ -207,7 +207,7 @@ jobs:
 
 ---
 
-⚠️ WARNING / sabdhan !
+⚠️ WARNING / चेतावनी !
 
 <div style="background-color: #000000; border-left: 5px solid #ff00ff; padding: 10px; border-radius: 0 15px 15px 0; box-shadow: 0 0 15px #ff00ff;">
   <h3 style="color: #00ffff; font-family: 'Orbitron', sans-serif;">⚠️ DISCLAIMER</h3>
@@ -224,7 +224,7 @@ jobs:
   <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%" alt="divider"/>
 </p>
 
-🧑‍💻 CONTRIBUTORS / অবদানকারী
+🧑‍💻 CONTRIBUTORS / योगदानकर्ता
 
 <div style="margin-top:20px">
   <a href="https://github.com/dexsam07/SHYAM-MD/graphs/contributors">
@@ -255,7 +255,7 @@ jobs:
 Topic Hinglish Me Samjho
 Bot Ka Naam SHYAM-MD – WhatsApp Auto-Reply Bot
 Language JavaScript (Node.js) – Full Stack
-Pairing Sites 3 buttons upar diye hain (neon style) – #1 fastest, #2 normal, #3 mini
+Pairing Sites 5 buttons upar diye hain (neon style) – #1 fastest, #2 normal, #3 alternate, #4 session, #5 mini
 Deployment Heroku, Koyeb, Railway, Bot-Hosting, Render – sab pe deploy kar sakte ho
 GitHub Workflow Free auto-deploy ke liye YAML code diya hai – error fixed
 Warning WhatsApp official nahi hai, misuse mat karo, account ban ho sakta hai
@@ -279,11 +279,11 @@ npm install
 npm start
 ```
 
-📌 Note: Pairing code ke liye upar diye gaye teen (3) buttons mein se kisi ek par click karo, site open karo aur session ID generate karke bot mein daalo.
+📌 Note: Pairing code ke liye upar diye gaye paanch (5) buttons mein se kisi ek par click karo, site open karo aur session ID generate karke bot mein daalo.
 
 ---
 
-📡 SUPPORT / MADAD CHAHIYE !!
+📡 SUPPORT / MADAD CHAHIYE?
 
 · YouTube: @dex_shyam_tech – Tutorials & Updates
 · WhatsApp Channel: Join Fast – Latest News
