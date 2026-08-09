@@ -68,11 +68,11 @@
 
 <p align="center">
   <!-- #2 -->
-  <a href="https://dex-pairing-session.onrender.com/" target="_blank">
+  <a href="https://dex-session-8o8l.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/💠_%232-NORMAL_PAIRING-2196F3?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#2 Normal Pairing"/>
   </a>
   <br>
-  <a href="https://dex-pairing-session.onrender.com/" target="_blank">
+  <a href="https://dex-session-8o8l.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
