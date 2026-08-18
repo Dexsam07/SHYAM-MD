@@ -6,7 +6,7 @@ const OWN_REPO = "dexsam07/SHYAM-MD";
 const OWN_BRANCH = "main";
 
 const YOUTUBE_DEPLOY = "https://youtu.be/Hmp17yyU9Xc?si=ZDOCs21B5ly4k-xQ";
-const SESSION_ID = "https://dex-pair-ai.onrender.com/";
+const SESSION_ID = "https://dex-sessions.zone.id/";
 const WHATSAPP_CHANNEL = "https://whatsapp.com/channel/0029VbBgXTsKwqSKZKy38w2o";
 
 function run(cmd) {
