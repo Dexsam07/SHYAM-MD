@@ -90,11 +90,11 @@
 
 <p align="center">
   <!-- #4 -->
-  <a href="https://dex-session.onrender.com/" target="_blank">
+  <a href="https://dex-session-k05g.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/🟣_%234-SESSION_PAIRING-9C27B0?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#4 Session Pairing"/>
   </a>
   <br>
-  <a href="https://dex-session.onrender.com/" target="_blank">
+  <a href="https://dex-session-k05g.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
