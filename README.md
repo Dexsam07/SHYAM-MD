@@ -79,11 +79,11 @@
 
 <p align="center">
   <!-- #3 -->
-  <a href="https://shyam-md-ofc.zone.id/" target="_blank">
+  <a href="https://shyam-md-piar-ee4f.onrender.com/" target="_blank">
     <img src="https://img.shields.io/badge/🔵_%233-ALTERNATE_PAIRING-FF5722?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#3 Alternate Pairing"/>
   </a>
   <br>
-  <a href="https://shyam-md-ofc.zone.id/" target="_blank">
+  <a href="https://shyam-md-piar-ee4f.onrender.com/" target="_blank">
     <img src="./Shyam/paircode-link.svg" width="195" alt="PAIR_CODE – Device Session ID">
   </a>
 </p>
