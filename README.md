@@ -90,7 +90,7 @@
 
 <p align="center">
   <!-- #4 -->
-  <a href="shyam-md-ofc.zone.id" target="_blank">
+  <a href="https://shyam-md-ofc.zone.id/" target="_blank">
     <img src="https://img.shields.io/badge/🟣_%234-SESSION_PAIRING-9C27B0?style=for-the-badge&logo=whatsapp&logoColor=white" alt="#4 Session Pairing"/>
   </a>
   <br>
